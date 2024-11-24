@@ -1,0 +1,4 @@
+Django==4.2
+#static file uchun
+whitenoise==6.6.0
+#hosting uchun 

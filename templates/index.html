@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>TalTes</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/icon.jpg' %}" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css" rel="stylesheet' %}">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'css/main.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Bootslander
+  * Template URL: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header align-items-center fixed-top"><div class="" style="background-color: rgba(95, 106, 192, .7); margin-top: -20px;padding:12px 30px;align-items: center;  font-size: 14px; font-weight: 600; text-align: center;">
+      <span>Sayt test rejimida ishlamoqda.</span>
+    </div>
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="{% url 'home' %}" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="{% static 'img/icon1.png' %}" alt="">
+        <h1 class="sitename">TALTES</h1>
+      </a>
+
+      <nav class="navmenu">
+        <ul>
+          <li><a href="" class="active"><img src="{% static 'img/strategy.png' %}" style="width: 40px; height: 55px;" alt=""></a></li>
+          <li><a href=""><svg fill="white" height="30px" width="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" space="preserve"><g><path d="M480,277.715h-38.756v-38.859c0-5.521-4.478-10-10-10H255v-23.91h74.56c5.523,0,10-4.477,10-10v-90.166   c0-5.521-4.477-10-10-10H160.438c-5.522,0-10,4.479-10,10v90.166c0,5.523,4.478,10,10,10H235v23.91H58.756c-5.522,0-10,4.479-10,10   v38.859H10c-5.523,0-10,4.477-10,10v97.506c0,5.521,4.477,10,10,10h97.51c5.523,0,10-4.479,10-10v-97.506c0-5.523-4.477-10-10-10   H68.756v-28.859H235v28.859h-38.758c-5.523,0-10,4.477-10,10v97.506c0,5.521,4.477,10,10,10h97.514c5.522,0,10-4.479,10-10v-97.506   c0-5.523-4.478-10-10-10H255v-28.859h166.244v28.859h-38.758c-5.522,0-10,4.477-10,10v97.506c0,5.521,4.478,10,10,10H480   c5.522,0,10-4.479,10-10v-97.506C490,282.191,485.522,277.715,480,277.715z M170.438,114.779H319.56v70.166H170.438V114.779z    M97.51,375.221H20v-77.506h77.51V375.221z M283.756,375.221h-77.514v-77.506h77.514V375.221z M470,375.221h-77.514v-77.506H470   V375.221z"></path></g></svg></a></li>
+          <li class="dropdown"><a href="#"><span>O'zbekcha <img src="{% static 'img/uz.png' %}" style="max-width: 20px;" alt=""></span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li style="max-width: 10px;"><a href="#"><span>Ruscha</span><span> <img src="{% static 'img/ru.png' %}" style="max-width: 20px;" alt=""></span></a></li>
+              <li style="max-width: 10px;"><a href="#">Inglizch <img src="{% static 'img/en.png' %}" style="max-width: 20px;" alt=""></a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="">
+              <div class="contact-info">
+                <p style="font-size: 10px; margin: 0; text-align: center;">Ishonch telefoni</p>
+                <div class="contact-details">
+                  <img src="{% static 'img/tel.png' %}" style="max-width: 20px;" alt="">
+                  <span>+998 75 512-57-12</span>
+                </div>
+              </div>
+            </a>
+          </li>         
+          </li>
+          <li><a href=""><img src="https://cdn.tpp.uz/2021/07/15/09/40/40vWwpl1PtTDkqbevdMwoNH6cdCw1T1o_small.svg" alt=""></a></li>
+          <li><a href=""><img src="https://cdn.tpp.uz/2021/07/15/09/40/lNjq3viaUIcd4RVkmHXXZ9Ha1egKj7BM_small.svg" alt=""></a></li>
+          <li><a href=""><img src="https://cdn.tpp.uz/2021/07/15/09/40/JA6cpE2HYx9RzASRQ55jsh2GCInVwMHn_small.svg" alt=""></a></li>
+          <li><a href=""><img src="https://cdn.tpp.uz/2021/07/15/09/40/zN1IOpOxbJZQgufBZByGXtW88MNOpKQQ_small.svg" alt=""></a></li>
+          <li><a href=""><img src="https://cdn.tpp.uz/2021/07/16/09/42/1gP1Zwt5VIUtb5jYN17Dt8iHlbxW4j3a_small.svg" alt=""></a></li>
+          <li>
+            <div>
+              <input type="text" style="padding: 5px 15px;border: 1px solid #bacbf2; border-radius: 5px;transition: all .3s;font-size: 15px;font-weight: 600;background-color: #f3f6fd;" name="" id="">
+              <i style="margin-left: 20px; font-size: 20px;" class="bi-search"></i>
+            </div>
+          </li>
+        </ul>
+        
+      </nav>
+
+    </div>
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="" class="active">Jamiyat haqida</a></li>
+          <li><a href="">Faoliyat</a></li>
+          <li><a href="">Invistetsiya siyosati</a></li>
+          <li><a href="">Matbuot xizmati</a></li>
+          <li><a href="">Korporativ boshqaruv</a></li>
+          <li><a href="">Aksiyadorlar va sarmoyadorlar</a></li>
+        
+        </ul>
+        
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background"><img src="{% static 'img/hero-bg-2.jpg' %}" alt="" class="hero-bg">
+
+      <div class="container">
+        <div class="row gy-4 justify-content-between">
+          <div class="col-lg-4 order-lg-last hero-img" data-aos="zoom-out" data-aos-delay="100">
+            <img src="{% static 'img/fon1.png' %}" class="img-fluid animated" alt="">
+          </div>
+
+          <div class="col-lg-6  d-flex flex-column justify-content-center" data-aos="fade-in">
+            <h1>Talimarjon issiqlik elektr stansiyasi</h1>
+            <h1 style="font-size: 16px;"><span>Maqsadimiz</span> - ilg‘or va muvaffaqiyatli energetika kompaniyasiga aylanish <br>
+              <!-- <span>Ustuvor vazifalarimiz</span> - innovatsion rivojlanish, ekologik xavfsizlik va iqtisodiy samaradorlik  <br>             
+              <span>Hamkorlar</span> bilan munosabatlarda ochiqlik, shaffoflik va konstruktiv muloqot tarafdorimiz <br>              
+              <span>Mamlakat iste’molchilariga</span> uzluksiz va sifatli elektr energiyasini yetkazib berish               -->
+             </p>
+          </div>
+
+        </div>
+      </div>
+
+      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="wave1">
+          <use xlink:href="#wave-path" x="50" y="3"></use>
+        </g>
+        <g class="wave2">
+          <use xlink:href="#wave-path" x="50" y="0"></use>
+        </g>
+        <g class="wave3">
+          <use xlink:href="#wave-path" x="50" y="9"></use>
+        </g>
+      </svg>
+
+    </section><!-- /Hero Section -->
+    <!-- Stats Section -->
+    <section id="stats" class="stats section light-background" style="background-color: white;">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-fire"></i>
+            <div class="stats-item">
+              <p>Kasaba uyishmasi</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-cash-coin"></i>
+            <div class="stats-item">
+              <p>Korrupsiyaga qarshi kurashish</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-receipt-cutoff"></i>
+            <div class="stats-item">
+              <p>Tender va tanlovlar</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-person-raised-hand"></i>
+            <div class="stats-item">
+              <p>Axborot so’rash tartibi</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-person-workspace"></i>
+            <div class="stats-item">
+              <p>Yangi ish o’rinlari</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-database-check"></i>
+            <div class="stats-item">
+              <p>Jamiyat ochiq ma'lumotlari</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section" style="background-color: #f4f5fe;">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Haftalik</h2>
+        <div><span>Yangiliklar</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-xl-center gy-5">
+
+          <div class="col-xl-5 content">
+            <div class="image-container">
+              <img src="https://cdn.tpp.uz/2024/11/22/12/11/DLJr5pl60qDeMYDmpmTVv5NcaAy3u7yG.jpg" alt="">
+              <div class="date-container">
+                <span class="day">12</span>
+                <div class="month-year">
+                  <span class="month">Noyabr</span>
+                  <span class="year">2024</span>
+                </div>
+              </div>
+            </div>
+            <h3>About Us</h3>
+            <h2>Ducimus rerum libero reprehenderit cumque</h2>
+            <p>Ipsa sint sit. Quis ducimus tempore dolores impedit et dolor cumque alias maxime. Enim reiciendis minus et rerum hic non. Dicta quas cum quia maiores iure. Quidem nulla qui assumenda incidunt voluptatem tempora deleniti soluta.</p>
+          </div>
+          
+          <div class="col-xl-7">
+            <div class="row gy-4 icon-boxes">
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box">
+                  <div class="image-container">
+                    <img src="https://cdn.tpp.uz/2024/11/22/12/11/DLJr5pl60qDeMYDmpmTVv5NcaAy3u7yG.jpg" alt="">
+                    <div class="date-container">
+                      <span class="day">12</span>
+                      <div class="month-year">
+                        <span class="month">Noyabr</span>
+                        <span class="year">2024</span>
+                      </div>
+                    </div>
+                  </div>
+                  <h3>Eius provident</h3>
+                  <p>Magni repellendus vel ullam hic officia accusantium ipsa dolor omnis dolor voluptatem</p>
+                </div>
+              </div>
+          
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box">
+                  <div class="image-container">
+                    <img src="https://cdn.tpp.uz/2024/11/22/12/11/DLJr5pl60qDeMYDmpmTVv5NcaAy3u7yG.jpg" alt="">
+                    <div class="date-container">
+                      <span class="day">12</span>
+                      <div class="month-year">
+                        <span class="month">Noyabr</span>
+                        <span class="year">2024</span>
+                      </div>
+                    </div>
+                  </div>
+                  <h3>Eius provident</h3>
+                  <p>Magni repellendus vel ullam hic officia accusantium ipsa dolor omnis dolor voluptatem</p>
+                </div>
+              </div>
+          
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box">
+                  <div class="image-container">
+                    <img src="https://cdn.tpp.uz/2024/11/22/12/11/DLJr5pl60qDeMYDmpmTVv5NcaAy3u7yG.jpg" alt="">
+                    <div class="date-container">
+                      <span class="day">12</span>
+                      <div class="month-year">
+                        <span class="month">Noyabr</span>
+                        <span class="year">2024</span>
+                      </div>
+                    </div>
+                  </div>
+                  <h3>Eius provident</h3>
+                  <p>Magni repellendus vel ullam hic officia accusantium ipsa dolor omnis dolor voluptatem</p>
+                </div>
+              </div>
+          
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box">
+                  <div class="image-container">
+                    <img src="https://cdn.tpp.uz/2024/11/22/12/11/DLJr5pl60qDeMYDmpmTVv5NcaAy3u7yG.jpg" style="max-width: 300px;" alt="">
+                    <div class="date-container">
+                      <span class="day">12</span>
+                      <div class="month-year">
+                        <span class="month">Noyabr</span>
+                        <span class="year">2024</span>
+                      </div>
+                    </div>
+                  </div>
+                  <h3>Delares sapiente</h3>
+                  <p>Sint et dolor voluptas minus possimus nostrum. Reiciendis commodi eligendi omnis quideme lorenda</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Foydali</h2>
+        <div><span>davlat veb-saytlari</span></div>
+      </div><!-- End Section Title -->
+       
+      <div class="container">
+        <div class="slider">
+          <div class="slider-track">
+            <!-- Elementlarni ko'chirib kiritamiz -->
+            <div class="slider-item">
+              <img src="{% static 'img/gerb.png' %}" style="max-width: 100px;" alt="">
+              <h3><a href="https://president.uz/" class="stretched-link">O'ZBEKISTON RESPUBLIKASI PREZIDENTI</a></h3>
+            </div>
+
+            <div class="slider-item">
+              <img src="{% static 'img/gerb.png' %}" style="max-width: 100px;" alt="">
+              <h3><a href="https://senat.uz/" class="stretched-link">O'ZBEKISTON RESPUBLIKASI OLIY MAJLISI SENATI</a></h3>
+            </div>
+            <div class="slider-item">
+              <img src="{% static 'img/gerb.png' %}" style="max-width: 100px;" alt="">
+              <h3><a href="https://parliament.gov.uz/uz/?clear_cache=Y" class="stretched-link">O'ZBEKISTON RESPUBLIKASI OLIY MAJLISI QONUNCHILIK PALATASI</a></h3>
+            </div>
+            <div class="slider-item">
+              <img src="{% static 'img/gerb.png' %}" style="max-width: 100px;" alt="">
+              <h3><a href="https://gov.uz/en" class="stretched-link">O'ZBEKISTON RESPUBLIKASI VAZIRLAR MAHKAMASI</a></h3>
+            </div>
+            <div class="slider-item">
+              <img src="{% static 'img/gerb.png' %}" style="max-width: 100px;" alt="">
+              <h3><a href="https://mf.uz/" class="stretched-link">O`ZBEKISTON RESPUBLIKASI IQTISODIYOT VA MOLIYA VAZIRLIGI</a></h3>
+            </div>
+            
+          </div>
+        </div>
+        <div class="controls">
+          <button id="prev" style="background:none; color: #0056b3; font-size: 40px; font-weight: bold;"><i class="bi bi-arrow-left"></i></button>
+          <button id="next"style="background:none; color: #0056b3; font-size: 40px; font-weight: bold;"><i class="bi bi-arrow-right"></i></button>
+        </div>
+      </div>
+    </section>
+    
+<style>
+  .slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+  flex: 0 0 25%; /* Har bir elementning kengligi */
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.slider {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+  flex: 0 0 25%; /* Har bir elementning kengligi */
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+</style>
+<script>
+  const sliderTrack = document.querySelector('.slider-track');
+const slides = document.querySelectorAll('.slider-item');
+const prevBtn = document.getElementById('prev');
+const nextBtn = document.getElementById('next');
+
+let currentIndex = 0;
+const itemsPerView = 4; // Bir vaqtning o'zida ko'rsatiladigan elementlar soni
+const totalSlides = slides.length;
+
+// Slayderni cheksiz aylanish uchun tayyorlash
+function cloneSlides() {
+  for (let i = 0; i < itemsPerView; i++) {
+    const firstClone = slides[i].cloneNode(true);
+    const lastClone = slides[totalSlides - 1 - i].cloneNode(true);
+    sliderTrack.appendChild(firstClone);
+    sliderTrack.insertBefore(lastClone, sliderTrack.firstChild);
+  }
+}
+
+cloneSlides();
+
+const slideWidth = 100 / itemsPerView;
+sliderTrack.style.transform = `translateX(-${slideWidth * itemsPerView}%)`; // Boshlang'ich pozitsiya
+
+function updateSlider() {
+  sliderTrack.style.transition = 'transform 0.5s ease-in-out';
+  sliderTrack.style.transform = `translateX(-${slideWidth * (currentIndex + itemsPerView)}%)`;
+}
+
+function showNextSlide() {
+  currentIndex++;
+  updateSlider();
+
+  if (currentIndex >= totalSlides) {
+    setTimeout(() => {
+      sliderTrack.style.transition = 'none';
+      currentIndex = 0;
+      sliderTrack.style.transform = `translateX(-${slideWidth * itemsPerView}%)`;
+    }, 500);
+  }
+}
+
+function showPrevSlide() {
+  currentIndex--;
+  updateSlider();
+
+  if (currentIndex < 0) {
+    setTimeout(() => {
+      sliderTrack.style.transition = 'none';
+      currentIndex = totalSlides - 1;
+      sliderTrack.style.transform = `translateX(-${slideWidth * (currentIndex + itemsPerView)}%)`;
+    }, 500);
+  }
+}
+
+// Auto-slide every 2 seconds
+let autoSlide = setInterval(showNextSlide, 3000);
+
+// Button click events
+nextBtn.addEventListener('click', () => {
+  clearInterval(autoSlide); // Auto-slide to'xtaydi
+  showNextSlide();
+  autoSlide = setInterval(showNextSlide, 2000); // Keyin qayta boshlanadi
+});
+
+prevBtn.addEventListener('click', () => {
+  clearInterval(autoSlide);
+  showPrevSlide();
+  autoSlide = setInterval(showNextSlide, 2000);
+});
+
+</script>   
+    <!-- Details Section -->
+
+
+
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section light-background">
+      <style>
+        .faq .row {
+          display: flex; /* Flexbox qo'llanadi */
+          align-items: stretch; /* Ustunlarni bir xil balandlikda cho'zish */
+        }
+    
+        .faq .col-lg-6 {
+          display: flex;
+          flex-direction: column;
+        }
+    
+        .faq-container {
+          flex-grow: 1; /* Bo'sh joyni teng taqsimlash */
+        }
+    
+        @media (max-width: 767px) {
+          .faq .row {
+            display: block; /* Mobil ekranlarda ustunlar blok ko'rinishida bo'ladi */
+          }
+        }
+      </style>
+      <div class="container-fluid">
+        <div class="row gy-4">
+          <!-- First Column -->
+          <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center order-2 order-lg-1">
+            <div class="content px-3" data-aos="fade-up" data-aos-delay="100">
+              <h3><strong>Onlayn </strong><span>so'rovnoma </span></h3>
+            </div>
+            <div class="faq-container px-3" data-aos="fade-up" data-aos-delay="200">
+              <div class="faq-item faq-active">
+                <h3>Siz “Issiqlik elektr stansiyalari“ AJ tomonidan oʻtkazilayotgan soʻrovnomada ishtirok etmoqchimisiz?</h3>
+                <div class="faq-content">
+                  <input type="checkbox" name="" id="">
+                  <input type="checkbox" name="" id="">
+                  <input type="checkbox" name="" id="">
+                </div>
+                <a href="" class="cat-button" style="border-radius: 10px;color: white; background-color: #1acc8d; display: block; text-align: center; padding: 10px 35px; border-radius: 5px; font-size: 16px; font-weight: 500; font-family: var(--heading-font); transition: 0.3s; margin-top: 20px; margin-bottom: 6px;">Elektron qabulxona</a>
+              </div>
+            </div>
+          </div>
+          <!-- Second Column -->
+          <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center order-2 order-lg-1">
+            <div class="content px-3" data-aos="fade-up" data-aos-delay="100">
+              <h3><strong>Savol</strong><span> yuborish </span></h3>
+            </div>
+            <div class="faq-container px-3" data-aos="fade-up" data-aos-delay="200">
+              <div class="faq-item faq-active">
+                <h3>Savolingiz bormi yoki “Issiqlik elektr stantsiyalari” АJ rahbariyatiga murojaat qilmoqchimisiz</h3>
+                <div class="faq-content">
+                  <p>Savol yoki murojaatingizni hoziroq yozing</p>
+                </div>
+                <a href="" class="cat-button" style="border-radius: 10px;color: white; background-color: #1acc8d; display: block; text-align: center; padding: 10px 35px; border-radius: 5px; font-size: 16px; font-weight: 500; font-family: var(--heading-font); transition: 0.3s; margin-top: 20px; margin-bottom: 6px;">Elektron qabulxona</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Bog'lanish</h2>
+        <div><span>Biz bilan</span> <span class="description-title">Bo'glanish</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Manzil</h3>
+                <p>Qashqadaryo</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Telefon</h3>
+                <p>+9989999999</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email</h3>
+                <p>info@example.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">TALTES</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Qashqadaryo</p>
+            <p>Nimadur tuman nimadur kocha</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+955 88 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>KOMPANIYA HAQIDA</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>FAOLIYAT</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>ALOQA MA’LUMOTLARI</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">TALTES</strong> <span>All Rights Reserved</span></p>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
