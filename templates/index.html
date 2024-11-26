@@ -49,7 +49,7 @@
 
       <nav class="navmenu">
         <ul>
-          <li><a href="" class="active"><img src="{% static 'img/strategy.png' %}" style="width: 40px; height: 55px;" alt=""></a></li>
+          <li><a href=""><img src="{% static 'img/strategy.png' %}" style="width: 40px; height: 55px;" alt=""></a></li>
           <li><a href=""><svg fill="white" height="30px" width="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" space="preserve"><g><path d="M480,277.715h-38.756v-38.859c0-5.521-4.478-10-10-10H255v-23.91h74.56c5.523,0,10-4.477,10-10v-90.166   c0-5.521-4.477-10-10-10H160.438c-5.522,0-10,4.479-10,10v90.166c0,5.523,4.478,10,10,10H235v23.91H58.756c-5.522,0-10,4.479-10,10   v38.859H10c-5.523,0-10,4.477-10,10v97.506c0,5.521,4.477,10,10,10h97.51c5.523,0,10-4.479,10-10v-97.506c0-5.523-4.477-10-10-10   H68.756v-28.859H235v28.859h-38.758c-5.523,0-10,4.477-10,10v97.506c0,5.521,4.477,10,10,10h97.514c5.522,0,10-4.479,10-10v-97.506   c0-5.523-4.478-10-10-10H255v-28.859h166.244v28.859h-38.758c-5.522,0-10,4.477-10,10v97.506c0,5.521,4.478,10,10,10H480   c5.522,0,10-4.479,10-10v-97.506C490,282.191,485.522,277.715,480,277.715z M170.438,114.779H319.56v70.166H170.438V114.779z    M97.51,375.221H20v-77.506h77.51V375.221z M283.756,375.221h-77.514v-77.506h77.514V375.221z M470,375.221h-77.514v-77.506H470   V375.221z"></path></g></svg></a></li>
           <li class="dropdown"><a href="#"><span>O'zbekcha <img src="{% static 'img/uz.png' %}" style="max-width: 20px;" alt=""></span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -77,7 +77,7 @@
           <li>
             <div>
               <input type="text" style="padding: 5px 15px;border: 1px solid #bacbf2; border-radius: 5px;transition: all .3s;font-size: 15px;font-weight: 600;background-color: #f3f6fd;" name="" id="">
-              <i style="margin-left: 20px; font-size: 20px;" class="bi-search"></i>
+              <i style="margin-left: 20px; font-size: 20px; justify-content: center; align-items: center;" class="bi-search"></i>
             </div>
           </li>
         </ul>
@@ -90,13 +90,85 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="" class="active">Jamiyat haqida</a></li>
-          <li><a href="">Faoliyat</a></li>
-          <li><a href="">Invistetsiya siyosati</a></li>
-          <li><a href="">Matbuot xizmati</a></li>
-          <li><a href="">Korporativ boshqaruv</a></li>
-          <li><a href="">Aksiyadorlar va sarmoyadorlar</a></li>
-        
+          <li class="dropdown"><a href="#"><span>Jamiyat haqida</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Jamiyat tarixi</a></li>
+              <li><a href="#">Jamiyat Jamiyat bugungi kunda</a></li>
+              <li><a href="#">Raxbariyat</a></li>
+              <li><a href="#">Bo'sh ish o'rinlari</a></li>
+              <li><a href="#">Jamiyatni rivojlantirish startegiyasi</a></li>
+              <li><a href="#">Jamiyatnig biznes rejalari</a></li>
+              <li><a href="#">Tashkiliy tuzulma</a></li>
+              <li><a href="#">Maxsulot va xizmatlar</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Korporativ boshqaruv</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#"><span>Boshqaruv organlari</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul class="start-50">
+                  <li><a href="#">Kuzatuv kengashi</a></li>
+                  <li><a href="#">Ijro etuvchi organ</a></li>
+                  <li><a href="#">Ichki audit tizim</a></li>
+                  <li><a href="#">Taftish komissiyasi</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>Axborotni oshkor qilish</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul class="start-50">
+                  <li><a href="#">Yillik va chorak hisobotlar</a></li>
+                  <li><a href="#">Muhum faktlar</a></li>
+                  <li><a href="#">Affillangan shaxslar ro'yxati</a></li>
+                  <li><a href="#">Xalqaro audit</a></li>
+                  <li><a href="#">Auditor hulosasi</a></li>
+                  <li><a href="">Emissiya risolalari</a></li>
+                  <li><a href="">Dividentlar to'lanishi</a></li>
+                  <li><a href="">Biznes rejaning har bir bandining bajarilishi bo'yicha ma'lumot</a></li>
+                </ul>
+              </li>
+              <li><a href="">Ijro organi a'zolarini mukofatlash</a></li>
+              <li><a href="">Ijro kengashi a'zolarini mukofatlash</a></li>
+              <li><a href="">Aksiyadorlar umumiy yig'ilishi to'g'risida ma'lumot</a></li>
+              <li><a href="">20%  dan ortiq aksiyalarga egalik qiluvchi aksiyadorlar</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Ichki nizom</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Nizom</a></li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Intraktiv xizmatlar</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Jismoniy va yuridik shaxslar murojaatlari bo'yicha ma'lumotlar</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#">Xorijiy investorlar uchun</a></li>
+          <li class="dropdown"><a href="#"><span>Matbuot xizmati</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Video lavhalar</a></li>
+              <li><a href="#">Yangiliklar</a></li>
+              <li><a href="#">Fotogaleriya</a></li>
+              <li><a href="#">Jamiyat haqida OAV materiallari</a></li>
+              <li><a href="">Tabriklar</a></li>
+              <li><a href="">E'lonlar</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Aloqalar</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Jamiyat boshqaruv rahbarining vertual qabulxonasi</a></li>
+              <li><a href="#">Aksiyadorlar bilan aloqa qilish uchun telefon raqamlar</a></li>
+              <li><a href="#">Investorlar bilan aloqa qilish uchun telefon raqamlar</a></li>
+            </ul>
+          </li>
+          <li  class="dropdown"><a href=""><span>Kerakli</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="">Yillik haridlar jadvali</a></li>
+            <li><a href="">Tender va birja</a></li>
+            <li><a href="">Aksiya sotib olish</a></li>
+            <li><a href="">Arxiv</a></li>
+          </ul>
+          </li>
         </ul>
         
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
