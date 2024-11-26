@@ -1,0 +1,309 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-26 10:52+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+#: .\templates\index.html:4
+msgid "Xush kelibsiz"
+msgstr ""
+
+#: .\templates\index.html:5
+msgid "Bu sahifa xalqaro til sozlamalarini qo'llab-quvvatlaydi."
+msgstr "eto web cayyt"
+
+msgid "Sayt test rejimida ishlamoqda."
+msgstr "Сайт находится в тестовом режиме."
+
+
+msgid "Inglizcha"
+msgstr "Инглеский"
+
+msgid "O'zbekcha"
+msgstr "Узбек"
+
+msgid "Ruscha"
+msgstr "Русский"
+
+msgid "Ishonch telefoni"
+msgstr "Горячая линия"
+
+msgid "Jamiyat haqida"
+msgstr "Об обществе"
+
+msgid "Jamiyat tarixi"
+msgstr "История компании"
+
+msgid "Jamiyat Jamiyat bugungi kunda"
+msgstr "Компания сегодня"
+
+msgid "Raxbariyat"
+msgstr "Руководство"
+
+msgid "Bo'sh ish o'rinlari"
+msgstr "Вакансии"
+
+msgid "Jamiyatni rivojlantirish strategiyasi"
+msgstr "Стратегия развития компании"
+
+msgid "Jamiyatning biznes rejalari"
+msgstr "Бизнес-планы компании"
+
+msgid "Tashkiliy tuzulma"
+msgstr "Организационная структура"
+
+msgid "Mahsulot va xizmatlar"
+msgstr "Продукты и услуги"
+
+msgid "Korporativ boshqaruv"
+msgstr "Корпоративное управление"
+
+
+msgid "Boshqaruv organlari"
+msgstr "Управляющие органы"
+
+msgid "Kuzatuv kengashi"
+msgstr "Наблюдательный совет"
+
+msgid "Ijro etuvchi organ"
+msgstr "Исполнительный орган"
+
+msgid "Ichki audit tizimi"
+msgstr "Система внутреннего аудита"
+
+msgid "Taftish komissiyasi"
+msgstr "Ревизионная комиссия"
+
+msgid "Axborotni oshkor qilish"
+msgstr "Раскрытие информации"
+
+msgid "Yillik va chorak hisobotlar"
+msgstr "Годовые и квартальные отчеты"
+
+msgid "Muhim faktlar"
+msgstr "Важные факты"
+
+msgid "Ichki nizom"
+msgstr "Внутреннее регулирование"
+
+msgid "Interaktiv xizmatlar"
+msgstr "Интерактивные услуги"
+
+msgid "Affillangan shaxslar ro'yxati"
+msgstr "Список аффилированных лиц"
+
+msgid "Xalqaro audit"
+msgstr "Международный аудит"
+
+msgid "Auditor hulosasi"
+msgstr "Аудиторское заключение"
+
+msgid "Emissiya risolalari"
+msgstr "Проспекты эмиссии"
+
+msgid "Dividentlar to'lanishi"
+msgstr "Выплата дивидендов"
+
+msgid "Biznes rejaning har bir bandining bajarilishi bo'yicha ma'lumot"
+msgstr "Информация о выполнении каждого пункта бизнес-плана"
+
+msgid "Ijro organi a'zolarini mukofatlash"
+msgstr "Вознаграждение членов исполнительного органа"
+
+msgid "Ijro kengashi a'zolarini mukofatlash"
+msgstr "Вознаграждение членов исполкома"
+
+msgid "Aksiyadorlar umumiy yig'ilishi to'g'risida ma'lumot"
+msgstr "Информация о общем собрании акционеров"
+
+msgid "20%dan ortiq aksiyalarga egalik qiluvchi aksiyadorlar"
+msgstr "Акционеры, владеющие более 20% акций"
+
+msgid "Intraktiv xizmatlar"
+msgstr "Интерактивные услуги"
+
+msgid "Jismoniy va yuridik shaxslar murojaatlari bo'yicha ma'lumotlar"
+msgstr "Информация по обращениям физических и юридических лиц"
+
+msgid "Xorijiy investorlar uchun"
+msgstr "Для иностранных инвесторов"
+
+msgid "Matbuot xizmati"
+msgstr "Пресс-служба"
+
+msgid "Video lavhalar"
+msgstr "Видеоматериалы"
+
+msgid "Fotogaleriya"
+msgstr "Фотогалерея"
+
+msgid "Jamiyat haqida OAV materiallari"
+msgstr "Материалы СМИ об обществе"
+
+msgid "Tabriklar"
+msgstr "Поздравления"
+
+msgid "E'lonlar"
+msgstr "Объявления"
+
+msgid "Aloqalar"
+msgstr "Контакты"
+
+msgid "Jamiyat boshqaruv rahbarining virtual qabulxonasi"
+msgstr "Виртуальная приемная руководителя общества"
+
+msgid "Aksiyadorlar bilan aloqa qilish uchun telefon raqamlar"
+msgstr "Телефоны для связи с акционерами"
+
+msgid "Investorlar bilan aloqa qilish uchun telefon raqamlar"
+msgstr "Телефоны для связи с инвесторами"
+
+msgid "Kerakli"
+msgstr "Необходимое"
+
+msgid "Yillik haridlar jadvali"
+msgstr "Годовой график закупок"
+
+msgid "Tender va birja"
+msgstr "Тендеры и биржа"
+
+msgid "Aksiya sotib olish"
+msgstr "Покупка акций"
+
+msgid "Arxiv"
+msgstr "Архив"
+
+msgid "Talimarjon issiqlik elektr stansiyasi"
+msgstr "Талимарджанская тепловая электростанция"
+
+msgid "Maqsadimiz"
+msgstr "Наша цель"
+
+msgid "ilg‘or va muvaffaqiyatli energetika kompaniyasiga aylanish"
+msgstr "Стать передовой и успешной энергетической компанией"
+
+msgid "Kasaba uyushmasi"
+msgstr "Профсоюз"
+
+msgid "Korrupsiyaga qarshi kurashish"
+msgstr "Борьба с коррупцией"
+
+msgid "Tender va tanlovlar"
+msgstr "Тендеры и конкурсы"
+
+msgid "Axborot so’rash tartibi"
+msgstr "Порядок запроса информации"
+
+msgid "Yangi ish o’rinlari"
+msgstr "Новые рабочие места"
+
+msgid "Jamiyat ochiq ma'lumotlari"
+msgstr "Открытые данные общества"
+
+msgid "Haftalik"
+msgstr "Еженедельный"
+
+msgid "Yangiliklar"
+msgstr "Новости"
+
+msgid "Foydali"
+msgstr "Полезные"
+
+msgid "Davlat veb-saytlari"
+msgstr "Государственные веб-сайты"
+
+msgid "O'zbekiston Respublikasi Prezidenti"
+msgstr "Президент Республики Узбекистан"
+
+msgid "O'zbekiston Respublikasi Oliy Majlisi Senati"
+msgstr "Сенат Олий Мажлиса Республики Узбекистан"
+
+msgid "O'zbekiston Respublikasi Oliy Majlisi Qonunchilik Palatasi"
+msgstr "Законодательная палата Олий Мажлиса Республики Узбекистан"
+
+msgid "O'zbekiston Respublikasi Vazirlar Mahkamasi"
+msgstr "Кабинет Министров Республики Узбекистан"
+
+msgid "O'zbekiston Respublikasi Iqtisodiyot va Moliya Vazirligi"
+msgstr "Министерство экономики и финансов Республики Узбекистан"
+
+msgid "Onlayn"
+msgstr "Онлайн"
+
+msgid "so'rovnoma"
+msgstr "опрос"
+
+msgid "Siz “Issiqlik elektr stansiyalari“ AJ tomonidan oʻtkazilayotgan soʻrovnomada ishtirok etmoqchimisiz?"
+msgstr "Вы хотите принять участие в опросе, проводимом АО «Тепловые электростанции»?"
+
+msgid "Aksiyadorlar umumiy yig'ilishi to'g'risida nizom"
+msgstr "Положение о общем собрании акционеров"
+
+msgid "Kuzatuv kengashi to'g'risida nizom"
+msgstr "Положение о наблюдательном совете"
+
+msgid "Ichki audit xizmati to'g'risida nizom"
+msgstr "Положение о службе внутреннего аудита"
+
+msgid "Sanoq komissiyasi to'g'risida nizom"
+msgstr "Положение о счетной комиссии"
+
+msgid "Taftish komissiyasi to'g'risida nizom"
+msgstr "Положение о ревизионной комиссии"
+
+msgid "Ijro etuvchi organ to'g'risida nizom"
+msgstr "Положение о исполнительном органе"
+
+msgid "Axborot siyosati to'g'risida nizom"
+msgstr "Положение о политике в области информации"
+
+msgid "Korporativ boshqaruv kodeksi"
+msgstr "Кодекс корпоративного управления"
+
+msgid "Dividend siyosati to'g'risida nizom"
+msgstr "Положение о дивидендной политике"
+
+msgid "Ichki nazorat to'g'risida nizom"
+msgstr "Положение о внутреннем контроле"
+
+msgid "Korporativ"
+msgstr "Корпоративный"
+
+msgid "Maslaxatchi"
+msgstr "Консультант"
+
+msgid "To'g'risida nizom"
+msgstr "Положение"
+
+msgid "Manfatlar qarama"
+msgstr "Конфликт интересов"
+
+msgid "Qarshiligi vaqtida"
+msgstr "Во время противодействия"
+
+msgid "Xarakat qilish"
+msgstr "Действия"
+
+msgid "Tartibi to'g'risida"
+msgstr "Положение о порядке"
+
+msgid "Ichki hujjatlar"
+msgstr "Внутренние документы"
+
+msgid "Nizom"
+msgstr "Регулирование"

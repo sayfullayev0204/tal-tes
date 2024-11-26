@@ -1,0 +1,304 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-26 10:53+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: .\templates\index.html:4
+msgid "Xush kelibsiz"
+msgstr ""
+
+#: .\templates\index.html:5
+msgid "Bu sahifa xalqaro til sozlamalarini qo'llab-quvvatlaydi."
+msgstr "Tis web site"
+
+msgid "Sayt test rejimida ishlamoqda."
+msgstr "The site is in test mode."
+msgid "Inglizcha"
+msgstr "English"
+
+msgid "Ruscha"
+msgstr "Russian"
+
+msgid "O'zbekcha"
+msgstr "Uzbek"
+
+msgid "Ishonch telefoni"
+msgstr "Hotline"
+
+msgid "Jamiyat haqida"
+msgstr "About the company"
+
+msgid "Jamiyat tarixi"
+msgstr "Company history"
+
+msgid "Jamiyat Jamiyat bugungi kunda"
+msgstr "The company today"
+
+msgid "Raxbariyat"
+msgstr "Management"
+
+msgid "Bo'sh ish o'rinlari"
+msgstr "Vacancies"
+
+msgid "Jamiyatni rivojlantirish strategiyasi"
+msgstr "Company development strategy"
+
+msgid "Jamiyatning biznes rejalari"
+msgstr "Company business plans"
+
+msgid "Tashkiliy tuzulma"
+msgstr "Organizational structure"
+
+msgid "Mahsulot va xizmatlar"
+msgstr "Products and services"
+
+msgid "Korporativ boshqaruv"
+msgstr "Corporate Governance"
+
+msgid "Boshqaruv organlari"
+msgstr "Governing Bodies"
+
+msgid "Kuzatuv kengashi"
+msgstr "Supervisory Board"
+
+msgid "Ijro etuvchi organ"
+msgstr "Executive Body"
+
+msgid "Ichki audit tizimi"
+msgstr "Internal Audit System"
+
+msgid "Taftish komissiyasi"
+msgstr "Inspection Commission"
+
+msgid "Axborotni oshkor qilish"
+msgstr "Information Disclosure"
+
+msgid "Yillik va chorak hisobotlar"
+msgstr "Annual and Quarterly Reports"
+
+msgid "Muhim faktlar"
+msgstr "Significant Facts"
+
+msgid "Affillangan shaxslar ro'yxati"
+msgstr "List of Affiliated Persons"
+
+msgid "Ichki nizom"
+msgstr "Internal regulation"
+
+msgid "Xalqaro audit"
+msgstr "International Audit"
+
+msgid "Interaktiv xizmatlar"
+msgstr "Interactive services"
+
+msgid "Auditor hulosasi"
+msgstr "Auditor's Conclusion"
+
+msgid "Emissiya risolalari"
+msgstr "Prospectuses of Emission"
+
+msgid "Dividentlar to'lanishi"
+msgstr "Dividend Payments"
+
+msgid "Biznes rejaning har bir bandining bajarilishi bo'yicha ma'lumot"
+msgstr "Information on the Fulfillment of Each Business Plan Item"
+
+msgid "Ijro organi a'zolarini mukofatlash"
+msgstr "Rewarding Executive Body Members"
+
+msgid "Ijro kengashi a'zolarini mukofatlash"
+msgstr "Rewarding Board Members"
+
+msgid "Aksiyadorlar umumiy yig'ilishi to'g'risida ma'lumot"
+msgstr "Information About the General Meeting of Shareholders"
+
+msgid "20%dan ortiq aksiyalarga egalik qiluvchi aksiyadorlar"
+msgstr "Shareholders Owning More Than 20% of Shares"
+
+msgid "Intraktiv xizmatlar"
+msgstr "Interactive Services"
+
+msgid "Jismoniy va yuridik shaxslar murojaatlari bo'yicha ma'lumotlar"
+msgstr "Information on Appeals of Individuals and Legal Entities"
+
+msgid "Xorijiy investorlar uchun"
+msgstr "For Foreign Investors"
+
+msgid "Matbuot xizmati"
+msgstr "Press Service"
+
+msgid "Video lavhalar"
+msgstr "Video Materials"
+
+msgid "Yangiliklar"
+msgstr "News"
+
+msgid "Fotogaleriya"
+msgstr "Photo Gallery"
+
+msgid "Jamiyat haqida OAV materiallari"
+msgstr "Media Materials About the Society"
+
+msgid "Tabriklar"
+msgstr "Greetings"
+
+msgid "E'lonlar"
+msgstr "Announcements"
+
+msgid "Aloqalar"
+msgstr "Contacts"
+
+msgid "Jamiyat boshqaruv rahbarining virtual qabulxonasi"
+msgstr "Virtual Reception of the Society's Management Head"
+
+msgid "Aksiyadorlar bilan aloqa qilish uchun telefon raqamlar"
+msgstr "Phone Numbers for Contacting Shareholders"
+
+msgid "Investorlar bilan aloqa qilish uchun telefon raqamlar"
+msgstr "Phone Numbers for Contacting Investors"
+
+msgid "Kerakli"
+msgstr "Necessary"
+
+msgid "Yillik haridlar jadvali"
+msgstr "Annual Procurement Schedule"
+
+msgid "Tender va birja"
+msgstr "Tenders and Exchange"
+
+msgid "Aksiya sotib olish"
+msgstr "Buying Shares"
+
+msgid "Arxiv"
+msgstr "Archive"
+
+msgid "Talimarjon issiqlik elektr stansiyasi"
+msgstr "Talimarjon Thermal Power Station"
+
+msgid "Maqsadimiz"
+msgstr "Our goal"
+
+msgid "ilg‘or va muvaffaqiyatli energetika kompaniyasiga aylanish"
+msgstr "To become a leading and successful energy company"
+
+msgid "Kasaba uyushmasi"
+msgstr "Labor Union"
+
+msgid "Korrupsiyaga qarshi kurashish"
+msgstr "Anti-Corruption Measures"
+
+msgid "Tender va tanlovlar"
+msgstr "Tenders and Competitions"
+
+msgid "Axborot so’rash tartibi"
+msgstr "Information Request Procedure"
+
+msgid "Yangi ish o’rinlari"
+msgstr "New Job Vacancies"
+
+msgid "Jamiyat ochiq ma'lumotlari"
+msgstr "Public Data of the Organization"
+
+msgid "Haftalik"
+msgstr "Weekly"
+
+msgid "Foydali"
+msgstr "Useful"
+
+msgid "Davlat veb-saytlari"
+msgstr "Government Websites"
+
+msgid "O'zbekiston Respublikasi Prezidenti"
+msgstr "President of the Republic of Uzbekistan"
+
+msgid "O'zbekiston Respublikasi Oliy Majlisi Senati"
+msgstr "Senate of the Oliy Majlis of the Republic of Uzbekistan"
+
+msgid "O'zbekiston Respublikasi Oliy Majlisi Qonunchilik Palatasi"
+msgstr "Legislative Chamber of the Oliy Majlis of the Republic of Uzbekistan"
+
+msgid "O'zbekiston Respublikasi Vazirlar Mahkamasi"
+msgstr "Cabinet of Ministers of the Republic of Uzbekistan"
+
+msgid "O'zbekiston Respublikasi Iqtisodiyot va Moliya Vazirligi"
+msgstr "Ministry of Economy and Finance of the Republic of Uzbekistan"
+
+msgid "Onlayn"
+msgstr "Online"
+
+msgid "so'rovnoma"
+msgstr "survey"
+
+msgid "Siz “Issiqlik elektr stansiyalari“ AJ tomonidan oʻtkazilayotgan soʻrovnomada ishtirok etmoqchimisiz?"
+msgstr "Would you like to participate in the survey conducted by “Thermal Power Plants” JSC?"
+
+msgid "Aksiyadorlar umumiy yig'ilishi to'g'risida nizom"
+msgstr "Regulation on General Shareholders' Meeting"
+
+msgid "Kuzatuv kengashi to'g'risida nizom"
+msgstr "Regulation on Supervisory Board"
+
+msgid "Ichki audit xizmati to'g'risida nizom"
+msgstr "Regulation on Internal Audit Service"
+
+msgid "Sanoq komissiyasi to'g'risida nizom"
+msgstr "Regulation on Counting Commission"
+
+msgid "Taftish komissiyasi to'g'risida nizom"
+msgstr "Regulation on Audit Commission"
+
+msgid "Ijro etuvchi organ to'g'risida nizom"
+msgstr "Regulation on Executive Body"
+
+msgid "Axborot siyosati to'g'risida nizom"
+msgstr "Regulation on Information Policy"
+
+msgid "Korporativ boshqaruv kodeksi"
+msgstr "Corporate Governance Code"
+
+msgid "Dividend siyosati to'g'risida nizom"
+msgstr "Regulation on Dividend Policy"
+
+msgid "Ichki nazorat to'g'risida nizom"
+msgstr "Regulation on Internal Control"
+
+msgid "Korporativ"
+msgstr "Corporate"
+
+msgid "Maslaxatchi"
+msgstr "Advisor"
+
+msgid "To'g'risida nizom"
+msgstr "Regulation"
+
+msgid "Manfatlar qarama"
+msgstr "Conflict of Interest"
+
+msgid "Qarshiligi vaqtida"
+msgstr "During Opposition"
+
+msgid "Xarakat qilish"
+msgstr "Action"
+
+msgid "Tartibi to'g'risida"
+msgstr "Regulation on Procedures"
+
+msgid "Ichki hujjatlar"
+msgstr "Internal documents"
+
+msgid "Nizom"
+msgstr "Regulation"

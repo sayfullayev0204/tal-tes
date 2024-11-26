@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  {% load i18n %}
 {% load static %}
 <head charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -8,7 +9,7 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="{% static 'img/icon.jpg' %}" rel="icon">
+  <link href="{% static 'img/icon1.png' %}" rel="icon" type="png">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -35,9 +36,9 @@
 </head>
 
 <body class="index-page">
-
-  <header id="header" class="header align-items-center fixed-top"><div class="" style="background-color: rgba(95, 106, 192, .7); margin-top: -20px;padding:12px 30px;align-items: center;  font-size: 14px; font-weight: 600; text-align: center;">
-      <span>Sayt test rejimida ishlamoqda.</span>
+<header id="header" class="header align-items-center fixed-top">
+  <div class="" style="background-color: rgba(95, 106, 192, .7); margin-top: -20px;padding:12px 30px;align-items: center;  font-size: 14px; font-weight: 600; text-align: center;">
+      <span>{% trans 'Sayt test rejimida ishlamoqda.'%}</span>
     </div>
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
@@ -51,16 +52,79 @@
         <ul>
           <li><a href=""><img src="{% static 'img/strategy.png' %}" style="width: 40px; height: 55px;" alt=""></a></li>
           <li><a href=""><svg fill="white" height="30px" width="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" space="preserve"><g><path d="M480,277.715h-38.756v-38.859c0-5.521-4.478-10-10-10H255v-23.91h74.56c5.523,0,10-4.477,10-10v-90.166   c0-5.521-4.477-10-10-10H160.438c-5.522,0-10,4.479-10,10v90.166c0,5.523,4.478,10,10,10H235v23.91H58.756c-5.522,0-10,4.479-10,10   v38.859H10c-5.523,0-10,4.477-10,10v97.506c0,5.521,4.477,10,10,10h97.51c5.523,0,10-4.479,10-10v-97.506c0-5.523-4.477-10-10-10   H68.756v-28.859H235v28.859h-38.758c-5.523,0-10,4.477-10,10v97.506c0,5.521,4.477,10,10,10h97.514c5.522,0,10-4.479,10-10v-97.506   c0-5.523-4.478-10-10-10H255v-28.859h166.244v28.859h-38.758c-5.522,0-10,4.477-10,10v97.506c0,5.521,4.478,10,10,10H480   c5.522,0,10-4.479,10-10v-97.506C490,282.191,485.522,277.715,480,277.715z M170.438,114.779H319.56v70.166H170.438V114.779z    M97.51,375.221H20v-77.506h77.51V375.221z M283.756,375.221h-77.514v-77.506h77.514V375.221z M470,375.221h-77.514v-77.506H470   V375.221z"></path></g></svg></a></li>
-          <li class="dropdown"><a href="#"><span>O'zbekcha <img src="{% static 'img/uz.png' %}" style="max-width: 20px;" alt=""></span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown">
+            <a href="#">
+                <span>
+                    {% if request.LANGUAGE_CODE == "uz" %}
+                        O'zbekcha <img src="{% static 'img/uz.png' %}" style="max-width: 20px;" alt="">
+                    {% elif request.LANGUAGE_CODE == "ru" %}
+                        Русский <img src="{% static 'img/ru.png' %}" style="max-width: 20px;" alt="">
+                    {% elif request.LANGUAGE_CODE == "en" %}
+                        English <img src="{% static 'img/en.png' %}" style="max-width: 20px;" alt="">
+                    {% endif %}
+                </span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i>
+            </a>
             <ul>
-              <li style="max-width: 10px;"><a href="#"><span>Ruscha</span><span> <img src="{% static 'img/ru.png' %}" style="max-width: 20px;" alt=""></span></a></li>
-              <li style="max-width: 10px;"><a href="#">Inglizch <img src="{% static 'img/en.png' %}" style="max-width: 20px;" alt=""></a></li>
+                <!-- Ruscha til uchun -->
+                <li>
+                    <form action="{% url 'set_language' %}" method="post" style="display: inline;">
+                        {% csrf_token %}
+                        <input type="hidden" name="language" value="ru">
+                        <button type="submit" style="background: none; border: none; padding: 0; cursor: pointer; display: flex; align-items: center;">
+                            <span style="margin-right: 5px;">{% trans "Ruscha" %}</span>
+                            <img src="{% static 'img/ru.png' %}" style="max-width: 20px;" alt="">
+                        </button>
+                    </form>
+                </li>
+        
+                <!-- Inglizcha til uchun -->
+                <li>
+                    <form action="{% url 'set_language' %}" method="post" style="display: inline;">
+                        {% csrf_token %}
+                        <input type="hidden" name="language" value="en">
+                        <button type="submit" style="background: none; border: none; padding: 0; cursor: pointer; display: flex; align-items: center;">
+                            <span style="margin-right: 5px;">{% trans "Inglizcha" %}</span>
+                            <img src="{% static 'img/en.png' %}" style="max-width: 20px;" alt="">
+                        </button>
+                    </form>
+                </li>
+        
+                <!-- O'zbekcha til uchun -->
+                <li>
+                    <form action="{% url 'set_language' %}" method="post" style="display: inline;">
+                        {% csrf_token %}
+                        <input type="hidden" name="language" value="uz">
+                        <button type="submit" style="background: none; border: none; padding: 0; cursor: pointer; display: flex; align-items: center;">
+                            <span style="margin-right: 5px;">{% trans "O'zbekcha" %}</span>
+                            <img src="{% static 'img/uz.png' %}" style="max-width: 20px;" alt="">
+                        </button>
+                    </form>
+                </li>
             </ul>
-          </li>
+        </li>
+        <style>
+          .dropdown ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .dropdown ul li {
+            padding: 5px 0;
+        }
+        
+        .dropdown ul li button {
+            font-size: 14px;
+            color: #333;
+            text-align: left;
+        }
+        
+        </style>         
           <li>
             <a href="">
               <div class="contact-info">
-                <p style="font-size: 10px; margin: 0; text-align: center;">Ishonch telefoni</p>
+                <p style="font-size: 10px; margin: 0; text-align: center;">{% trans "Ishonch telefoni" %}</p>
                 <div class="contact-details">
                   <img src="{% static 'img/tel.png' %}" style="max-width: 20px;" alt="">
                   <span>+998 75 512-57-12</span>
@@ -90,84 +154,103 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li class="dropdown"><a href="#"><span>Jamiyat haqida</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Jamiyat tarixi</a></li>
-              <li><a href="#">Jamiyat Jamiyat bugungi kunda</a></li>
-              <li><a href="#">Raxbariyat</a></li>
-              <li><a href="#">Bo'sh ish o'rinlari</a></li>
-              <li><a href="#">Jamiyatni rivojlantirish startegiyasi</a></li>
-              <li><a href="#">Jamiyatnig biznes rejalari</a></li>
-              <li><a href="#">Tashkiliy tuzulma</a></li>
-              <li><a href="#">Maxsulot va xizmatlar</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>Korporativ boshqaruv</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li class="dropdown"><a href="#"><span>Boshqaruv organlari</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul class="start-50">
-                  <li><a href="#">Kuzatuv kengashi</a></li>
-                  <li><a href="#">Ijro etuvchi organ</a></li>
-                  <li><a href="#">Ichki audit tizim</a></li>
-                  <li><a href="#">Taftish komissiyasi</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a href="#"><span>Axborotni oshkor qilish</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul class="start-50">
-                  <li><a href="#">Yillik va chorak hisobotlar</a></li>
-                  <li><a href="#">Muhum faktlar</a></li>
-                  <li><a href="#">Affillangan shaxslar ro'yxati</a></li>
-                  <li><a href="#">Xalqaro audit</a></li>
-                  <li><a href="#">Auditor hulosasi</a></li>
-                  <li><a href="">Emissiya risolalari</a></li>
-                  <li><a href="">Dividentlar to'lanishi</a></li>
-                  <li><a href="">Biznes rejaning har bir bandining bajarilishi bo'yicha ma'lumot</a></li>
-                </ul>
-              </li>
-              <li><a href="">Ijro organi a'zolarini mukofatlash</a></li>
-              <li><a href="">Ijro kengashi a'zolarini mukofatlash</a></li>
-              <li><a href="">Aksiyadorlar umumiy yig'ilishi to'g'risida ma'lumot</a></li>
-              <li><a href="">20%  dan ortiq aksiyalarga egalik qiluvchi aksiyadorlar</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>Ichki nizom</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Nizom</a></li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>Intraktiv xizmatlar</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Jismoniy va yuridik shaxslar murojaatlari bo'yicha ma'lumotlar</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#">Xorijiy investorlar uchun</a></li>
-          <li class="dropdown"><a href="#"><span>Matbuot xizmati</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Video lavhalar</a></li>
-              <li><a href="#">Yangiliklar</a></li>
-              <li><a href="#">Fotogaleriya</a></li>
-              <li><a href="#">Jamiyat haqida OAV materiallari</a></li>
-              <li><a href="">Tabriklar</a></li>
-              <li><a href="">E'lonlar</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>Aloqalar</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Jamiyat boshqaruv rahbarining vertual qabulxonasi</a></li>
-              <li><a href="#">Aksiyadorlar bilan aloqa qilish uchun telefon raqamlar</a></li>
-              <li><a href="#">Investorlar bilan aloqa qilish uchun telefon raqamlar</a></li>
-            </ul>
-          </li>
-          <li  class="dropdown"><a href=""><span>Kerakli</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#"><span>{% trans "Jamiyat haqida" %}</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
-            <li><a href="">Yillik haridlar jadvali</a></li>
-            <li><a href="">Tender va birja</a></li>
-            <li><a href="">Aksiya sotib olish</a></li>
-            <li><a href="">Arxiv</a></li>
+              <li><a href="#">{% trans "Jamiyat tarixi" %}</a></li>
+              <li><a href="#">{% trans "Jamiyat Jamiyat bugungi kunda" %}</a></li>
+              <li><a href="#">{% trans "Raxbariyat" %}</a></li>
+              <li><a href="#">{% trans "Bo'sh ish o'rinlari" %}</a></li>
+              <li><a href="#">{% trans "Jamiyatni rivojlantirish strategiyasi" %}</a></li>
+            <li><a href="#">{% trans "Jamiyatning biznes rejalari" %}</a></li>
+            <li><a href="#">{% trans "Tashkiliy tuzulma" %}</a></li>
+            <li><a href="#">{% trans "Mahsulot va xizmatlar" %}</a></li>
           </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>{% trans "Korporativ boshqaruv" %}</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#"><span>{% trans "Boshqaruv organlari" %}</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul class="start-50">
+                  <li><a href="#">{% trans "Kuzatuv kengashi" %}</a></li>
+                  <li><a href="#">{% trans "Ijro etuvchi organ" %}</a></li>
+                  <li><a href="#">{% trans "Ichki audit tizimi" %}</a></li>
+                  <li><a href="#">{% trans "Taftish komissiyasi" %}</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>{% trans "Axborotni oshkor qilish" %}</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul class="start-50">
+                  <li><a href="#">{% trans "Yillik va chorak hisobotlar" %}</a></li>
+                  <li><a href="#">{% trans "Muhim faktlar" %}</a></li>
+                  <li><a href="#">{% trans "Affillangan shaxslar ro'yxati" %}</a></li>
+                  <li><a href="#">{% trans "Xalqaro audit" %}</a></li>
+                  <li><a href="#">{% trans "Auditor hulosasi" %}</a></li>
+                  <li><a href="#">{% trans "Emissiya risolalari" %}</a></li>
+                  <li><a href="#">{% trans "Dividentlar to'lanishi" %}</a></li>
+                  <li><a href="#">{% trans "Biznes rejaning har bir bandining bajarilishi bo'yicha ma'lumot" %}</a></li>
+                </ul>
+              </li>
+              <li><a href="#">{% trans "Ijro organi a'zolarini mukofatlash" %}</a></li>
+              <li><a href="#">{% trans "Ijro kengashi a'zolarini mukofatlash" %}</a></li>
+              <li><a href="#">{% trans "Aksiyadorlar umumiy yig'ilishi to'g'risida ma'lumot" %}</a></li>
+              <li><a href="#">{% trans "20%dan ortiq aksiyalarga egalik qiluvchi aksiyadorlar" %}</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>{% trans "Ichki nizom" %}</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">{% trans "Nizom" %}</a></li>
+              <li class="dropdown"><a href="#"><span>{% trans "Ichki hujjatlar" %}</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul class="start-50">
+                  <li><a href="#">{% trans "Aksiyadorlar umumiy yig'ilishi to'g'risida nizom" %}</a></li>
+                  <li><a href="#">{% trans "Kuzatuv kengashi to'g'risida nizom" %}</a></li>
+                  <li><a href="#">{% trans "Ichki audit xizmati to'g'risida nizom" %}</a></li>
+                  <li><a href="#">{% trans "Sanoq komissiyasi to'g'risida nizom" %}</a></li>
+                  <li><a href="#">{% trans "Taftish komissiyasi to'g'risida nizom" %}</a></li>
+                  <li><a href="#">{% trans "Ijro etuvchi organ to'g'risida nizom" %}</a></li>
+                  <li><a href="#">{% trans "Axborot siyosati to'g'risida nizom" %}</a></li>
+                  <li><a href="#">{% trans "Korporativ boshqaruv kodeksi" %}</a></li>
+                  <li><a href="#">{% trans "Dividend siyosati to'g'risida nizom" %}</a></li>
+                  <li><a href="#">{% trans "Ichki nazorat to'g'risida nizom" %}</a></li>
+                  <li><a href="#">{% trans "Korporativ" %}</a></li>
+                  <li><a href="#">{% trans "Maslaxatchi" %}</a></li>
+                  <li><a href="#">{% trans "To'g'risida nizom" %}</a></li>
+                  <li><a href="#">{% trans "Manfatlar qarama" %}</a></li>
+                  <li><a href="#">{% trans "Qarshiligi vaqtida" %}</a></li>
+                  <li><a href="#">{% trans "Xarakat qilish" %}</a></li>
+                  <li><a href="#">{% trans "Tartibi to'g'risida" %}</a></li>
+                </ul>
+                
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>{% trans "Interaktiv xizmatlar" %}</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">{% trans "Jismoniy va yuridik shaxslar murojaatlari bo'yicha ma'lumotlar" %}</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#">{% trans "Xorijiy investorlar uchun" %}</a></li>
+          <li class="dropdown"><a href="#"><span>{% trans "Matbuot xizmati" %}</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">{% trans "Video lavhalar" %}</a></li>
+              <li><a href="#">{% trans "Yangiliklar" %}</a></li>
+              <li><a href="#">{% trans "Fotogaleriya" %}</a></li>
+              <li><a href="#">{% trans "Jamiyat haqida OAV materiallari" %}</a></li>
+              <li><a href="#">{% trans "Tabriklar" %}</a></li>
+              <li><a href="#">{% trans "E'lonlar" %}</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>{% trans "Aloqalar" %}</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul style="left: -200px;">
+              <li><a href="#">{% trans "Jamiyat boshqaruv rahbarining virtual qabulxonasi" %}</a></li>
+              <li><a href="#">{% trans "Aksiyadorlar bilan aloqa qilish uchun telefon raqamlar" %}</a></li>
+              <li><a href="#">{% trans "Investorlar bilan aloqa qilish uchun telefon raqamlar" %}</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>{% trans "Kerakli" %}</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul style="left: -100px">
+              <li><a href="#">{% trans "Yillik haridlar jadvali" %}</a></li>
+              <li><a href="#">{% trans "Tender va birja" %}</a></li>
+              <li><a href="#">{% trans "Aksiya sotib olish" %}</a></li>
+              <li><a href="#">{% trans "Arxiv" %}</a></li>
+            </ul>
           </li>
         </ul>
         
@@ -175,7 +258,7 @@
       </nav>
 
     </div>
-  </header>
+</header>
 
   <main class="main">
 
@@ -189,8 +272,11 @@
           </div>
 
           <div class="col-lg-6  d-flex flex-column justify-content-center" data-aos="fade-in">
-            <h1>Talimarjon issiqlik elektr stansiyasi</h1>
-            <h1 style="font-size: 16px;"><span>Maqsadimiz</span> - ilg‘or va muvaffaqiyatli energetika kompaniyasiga aylanish <br>
+            <h1>{% trans "Talimarjon issiqlik elektr stansiyasi" %}</h1>
+            <h1 style="font-size: 16px;">
+                <span>{% trans "Maqsadimiz" %}</span> - {% trans "ilg‘or va muvaffaqiyatli energetika kompaniyasiga aylanish" %}
+            </h1>
+            
               <!-- <span>Ustuvor vazifalarimiz</span> - innovatsion rivojlanish, ekologik xavfsizlik va iqtisodiy samaradorlik  <br>             
               <span>Hamkorlar</span> bilan munosabatlarda ochiqlik, shaffoflik va konstruktiv muloqot tarafdorimiz <br>              
               <span>Mamlakat iste’molchilariga</span> uzluksiz va sifatli elektr energiyasini yetkazib berish               -->
@@ -226,45 +312,45 @@
           <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
             <i class="bi bi-fire"></i>
             <div class="stats-item">
-              <p>Kasaba uyishmasi</p>
+                <p>{% trans "Kasaba uyushmasi" %}</p>
             </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        </div><!-- End Stats Item -->
+        
+        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
             <i class="bi bi-cash-coin"></i>
             <div class="stats-item">
-              <p>Korrupsiyaga qarshi kurashish</p>
+                <p>{% trans "Korrupsiyaga qarshi kurashish" %}</p>
             </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        </div><!-- End Stats Item -->
+        
+        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
             <i class="bi bi-receipt-cutoff"></i>
             <div class="stats-item">
-              <p>Tender va tanlovlar</p>
+                <p>{% trans "Tender va tanlovlar" %}</p>
             </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        </div><!-- End Stats Item -->
+        
+        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
             <i class="bi bi-person-raised-hand"></i>
             <div class="stats-item">
-              <p>Axborot so’rash tartibi</p>
+                <p>{% trans "Axborot so’rash tartibi" %}</p>
             </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        </div><!-- End Stats Item -->
+        
+        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
             <i class="bi bi-person-workspace"></i>
             <div class="stats-item">
-              <p>Yangi ish o’rinlari</p>
+                <p>{% trans "Yangi ish o’rinlari" %}</p>
             </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        </div><!-- End Stats Item -->
+        
+        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
             <i class="bi bi-database-check"></i>
             <div class="stats-item">
-              <p>Jamiyat ochiq ma'lumotlari</p>
+                <p>{% trans "Jamiyat ochiq ma'lumotlari" %}</p>
             </div>
-          </div><!-- End Stats Item -->
-
+        </div><!-- End Stats Item -->
+        
         </div>
 
       </div>
@@ -274,8 +360,9 @@
     <!-- About Section -->
     <section id="about" class="about section" style="background-color: #f4f5fe;">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Haftalik</h2>
-        <div><span>Yangiliklar</span></div>
+        <h2>{% trans "Haftalik" %}</h2>
+        <div><span>{% trans "Yangiliklar" %}</span></div>
+        
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -377,35 +464,63 @@
     <!-- Features Section -->
     <section id="features" class="features section">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Foydali</h2>
-        <div><span>davlat veb-saytlari</span></div>
+        <h2>{% trans "Foydali" %}</h2>
+        <div><span>{% trans "Davlat veb-saytlari" %}</span></div>
       </div><!-- End Section Title -->
-       
+    
       <div class="container">
         <div class="slider">
           <div class="slider-track">
             <!-- Elementlarni ko'chirib kiritamiz -->
             <div class="slider-item">
               <img src="{% static 'img/gerb.png' %}" style="max-width: 100px;" alt="">
-              <h3><a href="https://president.uz/" class="stretched-link">O'ZBEKISTON RESPUBLIKASI PREZIDENTI</a></h3>
+              <h3>
+                <a href="https://president.uz/" class="stretched-link">
+                  {% trans "O'zbekiston Respublikasi Prezidenti" %}
+                </a>
+              </h3>
             </div>
-
+    
             <div class="slider-item">
               <img src="{% static 'img/gerb.png' %}" style="max-width: 100px;" alt="">
-              <h3><a href="https://senat.uz/" class="stretched-link">O'ZBEKISTON RESPUBLIKASI OLIY MAJLISI SENATI</a></h3>
+              <h3>
+                <a href="https://senat.uz/" class="stretched-link">
+                  {% trans "O'zbekiston Respublikasi Oliy Majlisi Senati" %}
+                </a>
+              </h3>
             </div>
+    
             <div class="slider-item">
               <img src="{% static 'img/gerb.png' %}" style="max-width: 100px;" alt="">
-              <h3><a href="https://parliament.gov.uz/uz/?clear_cache=Y" class="stretched-link">O'ZBEKISTON RESPUBLIKASI OLIY MAJLISI QONUNCHILIK PALATASI</a></h3>
+              <h3>
+                <a href="https://parliament.gov.uz/uz/?clear_cache=Y" class="stretched-link">
+                  {% trans "O'zbekiston Respublikasi Oliy Majlisi Qonunchilik Palatasi" %}
+                </a>
+              </h3>
             </div>
+    
             <div class="slider-item">
               <img src="{% static 'img/gerb.png' %}" style="max-width: 100px;" alt="">
-              <h3><a href="https://gov.uz/en" class="stretched-link">O'ZBEKISTON RESPUBLIKASI VAZIRLAR MAHKAMASI</a></h3>
+              <h3>
+                <a href="https://gov.uz/en" class="stretched-link">
+                  {% trans "O'zbekiston Respublikasi Vazirlar Mahkamasi" %}
+                </a>
+              </h3>
             </div>
+    
             <div class="slider-item">
               <img src="{% static 'img/gerb.png' %}" style="max-width: 100px;" alt="">
-              <h3><a href="https://mf.uz/" class="stretched-link">O`ZBEKISTON RESPUBLIKASI IQTISODIYOT VA MOLIYA VAZIRLIGI</a></h3>
+              <h3>
+                <a href="https://mf.uz/" class="stretched-link">
+                  {% trans "O'zbekiston Respublikasi Iqtisodiyot va Moliya Vazirligi" %}
+                </a>
+              </h3>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
             
           </div>
         </div>
@@ -587,11 +702,16 @@ prevBtn.addEventListener('click', () => {
           <!-- First Column -->
           <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center order-2 order-lg-1">
             <div class="content px-3" data-aos="fade-up" data-aos-delay="100">
-              <h3><strong>Onlayn </strong><span>so'rovnoma </span></h3>
+              <h3>
+                <strong>{% trans "Onlayn" %} </strong>
+                <span>{% trans "so'rovnoma" %}</span>
+              </h3>
             </div>
             <div class="faq-container px-3" data-aos="fade-up" data-aos-delay="200">
               <div class="faq-item faq-active">
-                <h3>Siz “Issiqlik elektr stansiyalari“ AJ tomonidan oʻtkazilayotgan soʻrovnomada ishtirok etmoqchimisiz?</h3>
+                <h3>
+                  {% trans "Siz “Issiqlik elektr stansiyalari“ AJ tomonidan oʻtkazilayotgan soʻrovnomada ishtirok etmoqchimisiz?" %}
+                </h3>
                 <div class="faq-content">
                   <input type="checkbox" name="" id="">
                   <input type="checkbox" name="" id="">
@@ -604,13 +724,18 @@ prevBtn.addEventListener('click', () => {
           <!-- Second Column -->
           <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center order-2 order-lg-1">
             <div class="content px-3" data-aos="fade-up" data-aos-delay="100">
-              <h3><strong>Savol</strong><span> yuborish </span></h3>
+              <h3>
+                <strong>{% trans "Savol" %}</strong>
+                <span>{% trans "yuborish" %}</span>
+              </h3>
             </div>
             <div class="faq-container px-3" data-aos="fade-up" data-aos-delay="200">
               <div class="faq-item faq-active">
-                <h3>Savolingiz bormi yoki “Issiqlik elektr stantsiyalari” АJ rahbariyatiga murojaat qilmoqchimisiz</h3>
+                <h3>
+                  {% trans "Savolingiz bormi yoki “Issiqlik elektr stantsiyalari” АJ rahbariyatiga murojaat qilmoqchimisiz?" %}
+                </h3>
                 <div class="faq-content">
-                  <p>Savol yoki murojaatingizni hoziroq yozing</p>
+                  <p>{% trans "Savol yoki murojaatingizni hoziroq yozing" %}</p>
                 </div>
                 <a href="" class="cat-button" style="border-radius: 10px;color: white; background-color: #1acc8d; display: block; text-align: center; padding: 10px 35px; border-radius: 5px; font-size: 16px; font-weight: 500; font-family: var(--heading-font); transition: 0.3s; margin-top: 20px; margin-bottom: 6px;">Elektron qabulxona</a>
               </div>
