@@ -1,0 +1,56 @@
+.map-container {
+    position: relative;
+    width: 80%;
+}
+.region {
+    fill: #002e87;
+    stroke: #fff;
+    stroke-width: 1;
+    cursor: pointer;
+    transition: fill 0.3s;
+}
+.popup {
+    position: absolute;
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 10;
+}
+.popup img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.popup h4 {
+    margin: 0 0 10px;
+    font-size: 16px;
+}
+
+.popup p {
+    margin: 0;
+}
+.region:hover {
+    fill: #0056b3;
+}
+.circle {
+    fill: #ff5c5c;
+}
+.label {
+    font-size: 14px;
+    font-weight: bold;
+    fill: #fff;
+    text-anchor: middle;
+}
+#info-box {
+    position: absolute;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
