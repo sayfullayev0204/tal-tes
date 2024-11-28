@@ -310,3 +310,6 @@ msgstr "Регулирование"
 
 msgid "Sayt xaritasi"
 msgstr "Карта сайта"
+
+msgid "Issiqlik elektr stansiyalari aksiyadorlik jamiyati tarkibi"
+msgstr "Состав акционерного общества тепловых электростанций"

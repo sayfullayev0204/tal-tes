@@ -305,3 +305,6 @@ msgstr "Regulation"
 
 msgid "Sayt xaritasi"
 msgstr "Site map"
+
+msgid "Issiqlik elektr stansiyalari aksiyadorlik jamiyati tarkibi"
+msgstr "The composition of the joint-stock company of thermal power plants"
