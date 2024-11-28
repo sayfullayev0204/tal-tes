@@ -308,3 +308,27 @@ msgstr "Site map"
 
 msgid "Issiqlik elektr stansiyalari aksiyadorlik jamiyati tarkibi"
 msgstr "The composition of the joint-stock company of thermal power plants"
+
+msgid "Qoraqalpog‘iston Respublikasi"
+msgstr "Republic of Karakalpakstan"
+
+msgid "Rasmiy saytga o'ting"
+msgstr "Go to the official site"
+
+msgid "Navoiy viloyati"
+msgstr "Navoi region"
+
+msgid "Qashqadaryo viloyati"
+msgstr "Kashqadaryo region"
+
+msgid "Sirdaryo viloyati"
+msgstr "Sirdaryo region"
+
+msgid "Tovuz viloyati"
+msgstr "Tovuz region"
+
+msgid "Toshkent"
+msgstr "Tashkent"
+
+msgid "Farg‘ona viloyati"
+msgstr "Fergana region"

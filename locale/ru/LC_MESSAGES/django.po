@@ -313,3 +313,27 @@ msgstr "Карта сайта"
 
 msgid "Issiqlik elektr stansiyalari aksiyadorlik jamiyati tarkibi"
 msgstr "Состав акционерного общества тепловых электростанций"
+
+msgid "Qoraqalpog‘iston Respublikasi"
+msgstr "Республика Каракалпакстан"
+
+msgid "Rasmiy saytga o'ting"
+msgstr "Перейти на официальный сайт"
+
+msgid "Navoiy viloyati"
+msgstr "Навоийская область"
+
+msgid "Qashqadaryo viloyati"
+msgstr "Кашкадарьянская область"
+
+msgid "Farg‘ona viloyati"
+msgstr "Ферганская область"
+
+msgid "Namangan viloyati"
+msgstr "Наманганская область"
+
+msgid "Sirdaryo viloyati"
+msgstr "Сырдарьинская область"
+
+msgid "Toshkent"
+msgstr "Ташкент"
