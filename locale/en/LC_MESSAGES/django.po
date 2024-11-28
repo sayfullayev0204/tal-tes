@@ -126,8 +126,8 @@ msgstr "Rewarding Board Members"
 msgid "Aksiyadorlar umumiy yig'ilishi to'g'risida ma'lumot"
 msgstr "Information About the General Meeting of Shareholders"
 
-msgid "20%dan ortiq aksiyalarga egalik qiluvchi aksiyadorlar"
-msgstr "Shareholders Owning More Than 20% of Shares"
+msgid "20 foizdan ortiq aksiyalarga egalik qiluvchi aksiyadorlar"
+msgstr "Shareholders owning more than 20 percent of the shares"
 
 msgid "Intraktiv xizmatlar"
 msgstr "Interactive Services"
@@ -302,3 +302,6 @@ msgstr "Internal documents"
 
 msgid "Nizom"
 msgstr "Regulation"
+
+msgid "Sayt xaritasi"
+msgstr "Site map"

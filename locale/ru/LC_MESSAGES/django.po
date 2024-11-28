@@ -131,8 +131,8 @@ msgstr "Вознаграждение членов исполкома"
 msgid "Aksiyadorlar umumiy yig'ilishi to'g'risida ma'lumot"
 msgstr "Информация о общем собрании акционеров"
 
-msgid "20%dan ortiq aksiyalarga egalik qiluvchi aksiyadorlar"
-msgstr "Акционеры, владеющие более 20% акций"
+msgid "20 foizdan ortiq aksiyalarga egalik qiluvchi aksiyadorlar"
+msgstr "Акционеры, владеющие более 20 процентами акций"
 
 msgid "Intraktiv xizmatlar"
 msgstr "Интерактивные услуги"
@@ -307,3 +307,6 @@ msgstr "Внутренние документы"
 
 msgid "Nizom"
 msgstr "Регулирование"
+
+msgid "Sayt xaritasi"
+msgstr "Карта сайта"

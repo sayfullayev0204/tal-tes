@@ -179,6 +179,26 @@ h6 {
   --background-color: #10058c;
 }
 
+
+.faq .row {
+  display: flex; /* Flexbox qo'llanadi */
+  align-items: stretch; /* Ustunlarni bir xil balandlikda cho'zish */
+}
+
+.faq .col-lg-6 {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-container {
+  flex-grow: 1; /* Bo'sh joyni teng taqsimlash */
+}
+
+@media (max-width: 767px) {
+  .faq .row {
+    display: block; /* Mobil ekranlarda ustunlar blok ko'rinishida bo'ladi */
+  }
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
