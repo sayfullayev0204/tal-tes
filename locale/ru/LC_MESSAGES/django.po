@@ -337,3 +337,67 @@ msgstr "Сырдарьинская область"
 
 msgid "Toshkent"
 msgstr "Ташкент"
+
+msgid "“Tolimarjon issiqlik elektr stansiyasi” O‘zbekiston Respublikasi Energetika vazirligining “Tolimarjon DUKning asosiy faoliyatini tashkil etish to‘g‘risida”gi 02.08.1987 yildagi 209-son buyrug‘i bilan tashkil etilgan. Qashqadaryo viloyati Nishon tuman hokimining 2004 yil 18 noyabrdagi 21-380/11-son qarori bilan unitar korxona shakliga o‘tkazilgan.O‘zbekiston Respublikasi Prezidentining 2019-yil 27-martdagi qaroriga muvofiq. PQ-4249-son “O‘zbekiston Respublikasining elektroenergetika tarmog‘ini yanada rivojlantirish va isloh qilish strategiyasi to‘g‘risida”gi, shuningdek, 2019-yil 29-avgustdagi 1-son buyrug‘i asosida “Issiqlik elektr stansiyalari” AJ “Tolimarjon issiqlik elektr stansiyasi” korxonasi “Tolimarjon issiqlik elektr stansiyasi” aksiyadorlik jamiyati shakliga oʻtkazildi."
+msgstr "«Талимарджанская ТЭС» образована приказом Минэнерго РУз «Об организации основной деятельности Талимарджанская ГРЭС» за № 209 от 02.08.1987 года, решением Хокима Нишанского тумана Кашкадарьинского вилоята за № 21-380/11 от 18 ноября 2004 года переведена в форму Унитарного Предприятия.В соответствии с Постановлением Президента Республики Узбекистан от 27.03.2019г. №ПП-4249 «О стратегии дальнейшего развития и реформирования электроэнергетической отрасли Республики Узбекистан», а также на основании приказа №1 от 29.08.2019 года АО «Тепловые электрические станции»  Унитарное  предприятие «Талимарджанская ТЭС» переведена в форму  Акционерного Общества  «Талимарджанская ТЭС»."
+
+msgid "'Tolimarjon IES' AJ umumiy quvvati 1700 MVt. 800 MVtli 1-energkblok 2004-yilda ishga tushirilgan. 450 MVtli 1-bug‘-gaz qurilmasi 2016-yil oxirida, 450 MVtli 2-bug‘-gaz qurilmasi 2017-yil boshida ishga tushirilgan. Stansiya yiliga o‘rtacha 7,2 mlrd kVt soat elektr energiyasi ishlab chiqaradi. 1-va 2-bug‘-gaz qurilmalarida 1 kVt elektr energiyasi ishlab chiqarish uchun 214 gramm shartli yoqilg‘i sarflanadi. Stansiyada yiliga 25 000 Gkall issiqlik energiyasi ham ishlab chiqarilib, iste'molchilarga yetkazib beriladi."
+msgstr "Общая мощность АО «Толимарджон КЭС» составляет 1700 МВт. Первый энергоблок мощностью 800 МВт введен в эксплуатацию в 2004 году. В 2016 году введена в эксплуатацию 1-я парогазовая установка мощностью 450 МВт, в 2017 году — 2-я парогазовая установка мощностью 450 МВт. Станция производит в среднем 7,2 млрд кВтч электроэнергии в год. В 1-м и 2-м парогазовых устройствах для производства 1 кВт электроэнергии используется 214 грамм условной энергии. Также станция производит 25 000 Гкал тепловой энергии в год и обеспечивает электроэнергией потребителей."
+
+msgid "Stansiyada 10 ta asosiy sex bo‘lib, bular Qozon turbina -1 sexi, Qozon turbina -2 sexi, Suvni kimyoviy tozalash sexi, Elektr sexi, Markaziy ta'mirlash sexi va Oqava suv inshootlari sexi, Suv inshootlari sexi, Ichimlik suvi ta'minoti sexi, Energosozlash sexlaridir."
+msgstr "На станции имеется 10 основных цехов: цех котлотурбины-1, цех котлотурбины-2, цех химводоочистки, электротехнический цех, центральный ремонтный цех и цех канализационных работ, цех гидротехнических работ, цех питьевого водоснабжения, цеха электроснабжения. ."
+
+msgid "Shuningdek, stansiya tarkibida 'Sohibqiron' nomidagi bolalar oromgohi ham mavjud."
+msgstr "На территории станции также есть детский лагерь «Сахибкиран»."
+
+
+msgid "RAHBARIYAT"
+msgstr "Руководство"
+
+msgid "Ism va familiya"
+msgstr "ФИО"
+
+msgid "Lavozimi:"
+msgstr "Должность"
+
+msgid "Qabul kunlari:"
+msgstr "Дни приёма:"
+
+msgid "Pirmanov Jasurbek Nazarqulovich"
+msgstr "Пирманов Жасурбек Назаркулович"
+
+msgid "Bosh direktor"
+msgstr "Генеральный директор"
+
+msgid "Har xafta payshanba kuni. Soat 10:00 dan 12:00 gacha"
+msgstr "Каждый четверг с 10:00 до 12:00"
+
+msgid "Ahmedov Shovkat Zaripovich"
+msgstr "Ахмедов Шовкат Зарипович"
+
+msgid "Ishlab chiqarish boʻyicha direktor"
+msgstr "Директор по производству"
+
+msgid "Har xafta seshanba kuni. Soat 15:00 dan 17:00 gacha"
+msgstr "Каждый вторник с 15:00 до 17:00"
+
+msgid "Radjabov Najmiddin Asqarovich"
+msgstr "Раджабов Наджмиддин Асқарович"
+
+msgid "Umumiy masalalar boʻyicha direktor"
+msgstr "Директор по общим вопросам"
+
+msgid "Har xafta juma kuni. Soat 14:00 dan 16:00 gacha"
+msgstr "Каждую пятницу с 14:00 до 16:00"
+
+msgid "Xaitov Ixtiyor Batirovich"
+msgstr "Хаитов Ихтиёр Батирович"
+
+msgid "Tartibot va xavfsizlik boʻyicha direktor"
+msgstr "Директор по безопасности и порядку"
+
+msgid "Har xafta dushanba kuni. Soat 14:00 dan 16:00 gacha"
+msgstr "Каждый понедельник с 14:00 до 16:00"
+
+msgid "BO'SH ISH O'RINLARI Agar Siz Kompaniyamizda ishlash istagida bo'lsangiz, o'z rezyumeyingizni bizga yuborishingiz yoki nomzod anketasini saytimizdan o'zingizga yuklab olib, to'ldirib, so'ng faks yoki e-mail orqali bizga yuborishingiz mumkin. Faks: +998755125710 E-mail: taltes@tpp.uz Sizga mos bo'sh ish o'rni paydo bo'lishi bilan Kompaniyamizning Kadrlarni boshqarish bo'limi xodimlari Siz bilan aloqaga chiqadilar. Anketani ko'chirib olish"
+msgstr "ВАКАНТНЫЕ МЕСТА Если Вы хотите работать в нашей компании, можете прислать свое резюме либо скачать анкету кандидата и заполнив ее, прислать по факсу или е-mail. Факс: +998755125710 E-mail taltes@tpp.uz При появлении соответствующей вакансии сотрудники отдела управления персонала нашей компании свяжутся с Вами Скачать анкету"

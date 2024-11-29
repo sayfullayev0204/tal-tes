@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% trans "Jamiyat tarixi" %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    {% block content %}
+    <section id="management" class="section" style="background-color: white; padding: 50px 0;">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="text-center mb-4">{% trans "RAHBARIYAT" %}</h2>
+            <div class="row gy-4" style="margin-top: 200px;">
+                <!-- 1st Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">{% trans "Pirmanov Jasurbek Nazarqulovich" %}</h5>
+                            <p class="card-text"><strong>{% trans "Lavozimi:" %}</strong> {% trans "Bosh direktor" %}</p>
+                            <p class="card-text"><strong>{% trans "Qabul kunlari:" %}</strong> {% trans "Har xafta payshanba kuni. Soat 10:00 dan 12:00 gacha" %}</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">{% trans "Ahmedov Shovkat Zaripovich" %}</h5>
+                            <p class="card-text"><strong>{% trans "Lavozimi:" %}</strong> {% trans "Ishlab chiqarish boʻyicha direktor" %}</p>
+                            <p class="card-text"><strong>{% trans "Qabul kunlari:" %}</strong> {% trans "Har xafta seshanba kuni. Soat 15:00 dan 17:00 gacha" %}</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3rd Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">{% trans "Radjabov Najmiddin Asqarovich" %}</h5>
+                            <p class="card-text"><strong>{% trans "Lavozimi:" %}</strong> {% trans "Umumiy masalalar boʻyicha direktor" %}</p>
+                            <p class="card-text"><strong>{% trans "Qabul kunlari:" %}</strong> {% trans "Har xafta juma kuni. Soat 14:00 dan 16:00 gacha" %}</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4th Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">{% trans "Xaitov Ixtiyor Batirovich" %}</h5>
+                            <p class="card-text"><strong>{% trans "Lavozimi:" %}</strong> {% trans "Tartibot va xavfsizlik boʻyicha direktor" %}</p>
+                            <p class="card-text"><strong>{% trans "Qabul kunlari:" %}</strong> {% trans "Har xafta dushanba kuni. Soat 14:00 dan 16:00 gacha" %}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}
+</body>
+</html>

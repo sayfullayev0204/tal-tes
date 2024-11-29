@@ -5,8 +5,9 @@ from django.urls import path, include
 from django.conf.urls.i18n import i18n_patterns
 
 urlpatterns = i18n_patterns(
-    path('uzum-ser/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('', include('app.urls')),
+    # path('post/', include('post.urls'))
 )
 
 # i18n marshrutini qo'shing

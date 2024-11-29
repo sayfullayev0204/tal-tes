@@ -129,10 +129,10 @@
         <li class="dropdown"><a href="#"><span>{% trans "Jamiyat haqida" %}</span> <i
               class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
-            <li><a href="#">{% trans "Jamiyat tarixi" %}</a></li>
-            <li><a href="#">{% trans "Jamiyat Jamiyat bugungi kunda" %}</a></li>
-            <li><a href="#">{% trans "Raxbariyat" %}</a></li>
-            <li><a href="#">{% trans "Bo'sh ish o'rinlari" %}</a></li>
+            <li><a href="{% url 'jamiyat_tarixi' %}">{% trans "Jamiyat tarixi" %}</a></li>
+            <li><a href="{% url 'jamiyat_bugun' %}">{% trans "Jamiyat Jamiyat bugungi kunda" %}</a></li>
+            <li><a href="{% url 'raxbar' %}">{% trans "Raxbariyat" %}</a></li>
+            <li><a href="{% url 'ish'%}">{% trans "Bo'sh ish o'rinlari" %}</a></li>
             <li><a href="#">{% trans "Jamiyatni rivojlantirish strategiyasi" %}</a></li>
             <li><a href="#">{% trans "Jamiyatning biznes rejalari" %}</a></li>
             <li><a href="#">{% trans "Tashkiliy tuzulma" %}</a></li>
@@ -291,10 +291,10 @@
                 <div class="div1">
                   <h3 class="black"><a href="#" class="a-black" style="font-size: 20px;">{% trans "Jamiyat haqida" %}</a></h3>
                   <ul class="d-flex flex-column align-items-start">
-                    <li><a class="a-black" href="#">{% trans "Jamiyat tarixi" %}</a></li>
-                    <li><a class="a-black" href="#">{% trans "Jamiyat Jamiyat bugungi kunda" %}</a></li>
-                    <li><a class="a-black" href="#">{% trans "Raxbariyat" %}</a></li>
-                    <li><a class="a-black" href="#">{% trans "Bo'sh ish o'rinlari" %}</a></li>
+                    <li><a class="a-black" href="{% url 'jamiyat_tarixi' %}">{% trans "Jamiyat tarixi" %}</a></li>
+                    <li><a class="a-black" href="{% url 'jamiyat_bugun' %}">{% trans "Jamiyat Jamiyat bugungi kunda" %}</a></li>
+                    <li><a class="a-black" href="{% url 'raxbar' %}">{% trans "Raxbariyat" %}</a></li>
+                    <li><a class="a-black" href="{% url 'ish'%}">{% trans "Bo'sh ish o'rinlari" %}</a></li>
                     <li><a class="a-black" href="#">{% trans "Jamiyatni rivojlantirish strategiyasi" %}</a></li>
                     <li><a class="a-black" href="#">{% trans "Jamiyatning biznes rejalari" %}</a></li>
                     <li><a class="a-black" href="#">{% trans "Tashkiliy tuzulma" %}</a></li>

@@ -1,0 +1,47 @@
+{% extends "base.html"%}
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% trans "Jamiyat tarixi" %}</title>
+</head>
+<body>
+    {% block content %}
+    <section id="stats" class="stats section light-background" style="background-color: white;">
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+  
+          <div class="row gy-4">
+            <div class="accordion accordion-flush" style="margin-top: 300px;" id="accordionFlushExample">
+                <div class="alert" role="alert">
+                    <img class="large-image" src="{% static 'img/talimarjon.jpg' %}" alt="">
+                    {% trans "'Tolimarjon IES' AJ umumiy quvvati 1700 MVt. 800 MVtli 1-energkblok 2004-yilda ishga tushirilgan. 450 MVtli 1-bug‘-gaz qurilmasi 2016-yil oxirida, 450 MVtli 2-bug‘-gaz qurilmasi 2017-yil boshida ishga tushirilgan. Stansiya yiliga o‘rtacha 7,2 mlrd kVt soat elektr energiyasi ishlab chiqaradi. 1-va 2-bug‘-gaz qurilmalarida 1 kVt elektr energiyasi ishlab chiqarish uchun 214 gramm shartli yoqilg‘i sarflanadi. Stansiyada yiliga 25 000 Gkall issiqlik energiyasi ham ishlab chiqarilib, iste'molchilarga yetkazib beriladi." %}
+                    <br><br><br>
+                    {% trans "Stansiyada 10 ta asosiy sex bo‘lib, bular Qozon turbina -1 sexi, Qozon turbina -2 sexi, Suvni kimyoviy tozalash sexi, Elektr sexi, Markaziy ta'mirlash sexi va Oqava suv inshootlari sexi, Suv inshootlari sexi, Ichimlik suvi ta'minoti sexi, Energosozlash sexlaridir." %}
+                    <br><br><br>
+                    <img class="large-image" src="{% static 'img/lager.png' %}" alt="">
+                    {% trans "Shuningdek, stansiya tarkibida 'Sohibqiron' nomidagi bolalar oromgohi ham mavjud." %}
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+</body>
+</html>
+<style>
+    .large-image {
+    display: block;
+    max-width: 100%; /* Rasm sayt kengligiga moslashadi */
+    height: auto;    /* Proporsiyani saqlash */
+    margin: 20px auto; /* Markazga joylash */
+    width: 90%; /* Kattaroq o'lcham uchun kenglik belgilash */
+    border-radius: 10px; /* Rasm burchaklarini yumshatish */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Rasmga soyalar qo'shish */
+    height: 500px;
+}
+
+</style>                
+{% endblock %}

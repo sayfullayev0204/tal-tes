@@ -1,0 +1,646 @@
+{% load i18n %}
+{% load static %}
+{% load i18n %}
+{% load static %}
+
+  <!-- Favicons -->
+  <link href="{% static 'img/icon1.png' %}" rel="icon" type="png">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="{% static 'css/map.css' %}">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css" rel="stylesheet' %}">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <script src="{% static 'js/map.js' %}"></script>
+  <!-- Main CSS File -->
+  <link href="{% static 'css/main.css' %}" rel="stylesheet">
+
+  {% load i18n %}
+  {% load static %}
+  <header id="header" class="header align-items-center fixed-top" style="background-color: #10058c;">
+    <div class=""
+      style="background-color: rgba(95, 106, 192, .7); margin-top: -20px;padding:12px 30px;align-items: center;  font-size: 14px; font-weight: 600; text-align: center;">
+      <span>{% trans 'Sayt test rejimida ishlamoqda.'%}</span>
+    </div>
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  
+      <a href="{% url 'home' %}" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="{% static 'img/icon1.png' %}" alt="">
+        <h1 class="sitename">TALTES</h1>
+      </a>
+  
+      <nav class="navmenu">
+        <ul>
+          <li><a href=""><img src="{% static 'img/strategy.png' %}" style="width: 40px; height: 55px;" alt=""></a></li>
+          <!-- Button trigger modal -->
+  
+          <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"><svg fill="white"
+              height="30px" width="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+              xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" space="preserve">
+              <g>
+                <path
+                  d="M480,277.715h-38.756v-38.859c0-5.521-4.478-10-10-10H255v-23.91h74.56c5.523,0,10-4.477,10-10v-90.166   c0-5.521-4.477-10-10-10H160.438c-5.522,0-10,4.479-10,10v90.166c0,5.523,4.478,10,10,10H235v23.91H58.756c-5.522,0-10,4.479-10,10   v38.859H10c-5.523,0-10,4.477-10,10v97.506c0,5.521,4.477,10,10,10h97.51c5.523,0,10-4.479,10-10v-97.506c0-5.523-4.477-10-10-10   H68.756v-28.859H235v28.859h-38.758c-5.523,0-10,4.477-10,10v97.506c0,5.521,4.477,10,10,10h97.514c5.522,0,10-4.479,10-10v-97.506   c0-5.523-4.478-10-10-10H255v-28.859h166.244v28.859h-38.758c-5.522,0-10,4.477-10,10v97.506c0,5.521,4.478,10,10,10H480   c5.522,0,10-4.479,10-10v-97.506C490,282.191,485.522,277.715,480,277.715z M170.438,114.779H319.56v70.166H170.438V114.779z    M97.51,375.221H20v-77.506h77.51V375.221z M283.756,375.221h-77.514v-77.506h77.514V375.221z M470,375.221h-77.514v-77.506H470   V375.221z">
+                </path>
+              </g>
+            </svg></a></li>
+  
+          <li><a href=""><img src="{% static 'img/koz.png' %}" style="width: 40px;"></a></li>
+          <li class="dropdown">
+            <a href="#">
+              <span>
+                {% if request.LANGUAGE_CODE == "uz" %}
+                O'zbekcha <img src="{% static 'img/uz.png' %}" style="max-width: 20px;" alt="">
+                {% elif request.LANGUAGE_CODE == "ru" %}
+                Русский <img src="{% static 'img/ru.png' %}" style="max-width: 20px;" alt="">
+                {% elif request.LANGUAGE_CODE == "en" %}
+                English <img src="{% static 'img/en.png' %}" style="max-width: 20px;" alt="">
+                {% endif %}
+              </span>
+              <i class="bi bi-chevron-down toggle-dropdown"></i>
+            </a>
+            <ul>
+              <!-- Ruscha til uchun -->
+              <li>
+                <form action="{% url 'set_language' %}" method="post" style="display: inline;">
+                  {% csrf_token %}
+                  <input type="hidden" name="language" value="ru">
+                  <button type="submit"
+                    style="background: none; border: none; padding: 0; cursor: pointer; display: flex; align-items: center;">
+                    <span style="margin-right: 5px; color: black;">{% trans "Ruscha" %}</span>
+                    <img src="{% static 'img/ru.png' %}" style="max-width: 20px;" alt="">
+                  </button>
+                </form>
+              </li>
+  
+              <!-- Inglizcha til uchun -->
+              <li>
+                <form action="{% url 'set_language' %}" method="post" style="display: inline;">
+                  {% csrf_token %}
+                  <input type="hidden" name="language" value="en">
+                  <button type="submit"
+                    style="background: none; border: none; padding: 0; cursor: pointer; display: flex; align-items: center;">
+                    <span style="margin-right: 5px; color: black;">{% trans "Inglizcha" %}</span>
+                    <img src="{% static 'img/en.png' %}" style="max-width: 20px;" alt="">
+                  </button>
+                </form>
+              </li>
+  
+              <!-- O'zbekcha til uchun -->
+              <li>
+                <form action="{% url 'set_language' %}" method="post" style="display: inline;">
+                  {% csrf_token %}
+                  <input type="hidden" name="language" value="uz">
+                  <button type="submit"
+                    style="background: none; border: none; padding: 0; cursor: pointer; display: flex; align-items: center;">
+                    <span style="margin-right: 5px; color: black;">{% trans "O'zbekcha" %}</span>
+                    <img src="{% static 'img/uz.png' %}" style="max-width: 20px;" alt="">
+                  </button>
+                </form>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="">
+              <div class="contact-info">
+                <p style="font-size: 10px; margin: 0; text-align: center;">{% trans "Ishonch telefoni" %}</p>
+                <div class="contact-details">
+                  <img src="{% static 'img/tel.png' %}" style="max-width: 20px;" alt="">
+                  <span>+998 75 512-57-12</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          </li>
+          <li><a href=""><img src="https://cdn.tpp.uz/2021/07/15/09/40/40vWwpl1PtTDkqbevdMwoNH6cdCw1T1o_small.svg"
+                alt=""></a></li>
+          <li><a href=""><img src="https://cdn.tpp.uz/2021/07/15/09/40/lNjq3viaUIcd4RVkmHXXZ9Ha1egKj7BM_small.svg"
+                alt=""></a></li>
+          <li><a href=""><img src="https://cdn.tpp.uz/2021/07/15/09/40/JA6cpE2HYx9RzASRQ55jsh2GCInVwMHn_small.svg"
+                alt=""></a></li>
+          <li><a href=""><img src="https://cdn.tpp.uz/2021/07/15/09/40/zN1IOpOxbJZQgufBZByGXtW88MNOpKQQ_small.svg"
+                alt=""></a></li>
+          <li><a href=""><img src="https://cdn.tpp.uz/2021/07/16/09/42/1gP1Zwt5VIUtb5jYN17Dt8iHlbxW4j3a_small.svg"
+                alt=""></a></li>
+          <li>
+            <div>
+              <input type="text"
+                style="padding: 5px 15px;border: 1px solid #bacbf2; border-radius: 5px;transition: all .3s;font-size: 15px;font-weight: 600;background-color: #f3f6fd;"
+                name="" id="">
+              <i style="margin-left: 20px; font-size: 20px; justify-content: center; align-items: center;"
+                class="bi-search"></i>
+            </div>
+          </li>
+        </ul>
+  
+      </nav>
+  
+    </div>
+  
+  
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  
+  
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li class="dropdown"><a href="#"><span>{% trans "Jamiyat haqida" %}</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="{% url 'jamiyat_tarixi' %}">{% trans "Jamiyat tarixi" %}</a></li>
+              <li><a href="{% url 'jamiyat_bugun' %}">{% trans "Jamiyat Jamiyat bugungi kunda" %}</a></li>
+              <li><a href="{% url 'raxbar' %}">{% trans "Raxbariyat" %}</a></li>
+              <li><a href="{% url 'ish'%}">{% trans "Bo'sh ish o'rinlari" %}</a></li>
+              <li><a href="#">{% trans "Jamiyatni rivojlantirish strategiyasi" %}</a></li>
+              <li><a href="#">{% trans "Jamiyatning biznes rejalari" %}</a></li>
+              <li><a href="#">{% trans "Tashkiliy tuzulma" %}</a></li>
+              <li><a href="#">{% trans "Mahsulot va xizmatlar" %}</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>{% trans "Korporativ boshqaruv" %}</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#"><span>{% trans "Boshqaruv organlari" %}</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul class="start-50">
+                  <li><a href="#">{% trans "Kuzatuv kengashi" %}</a></li>
+                  <li><a href="#">{% trans "Ijro etuvchi organ" %}</a></li>
+                  <li><a href="#">{% trans "Ichki audit tizimi" %}</a></li>
+                  <li><a href="#">{% trans "Taftish komissiyasi" %}</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>{% trans "Axborotni oshkor qilish" %}</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul class="start-50">
+                  <li><a href="#">{% trans "Yillik va chorak hisobotlar" %}</a></li>
+                  <li><a href="#">{% trans "Muhim faktlar" %}</a></li>
+                  <li><a href="#">{% trans "Affillangan shaxslar ro'yxati" %}</a></li>
+                  <li><a href="#">{% trans "Xalqaro audit" %}</a></li>
+                  <li><a href="#">{% trans "Auditor hulosasi" %}</a></li>
+                  <li><a href="#">{% trans "Emissiya risolalari" %}</a></li>
+                  <li><a href="#">{% trans "Dividentlar to'lanishi" %}</a></li>
+                  <li><a href="#">{% trans "Biznes rejaning har bir bandining bajarilishi bo'yicha ma'lumot" %}</a></li>
+                </ul>
+              </li>
+              <li><a href="#">{% trans "Ijro organi a'zolarini mukofatlash" %}</a></li>
+              <li><a href="#">{% trans "Ijro kengashi a'zolarini mukofatlash" %}</a></li>
+              <li><a href="#">{% trans "Aksiyadorlar umumiy yig'ilishi to'g'risida ma'lumot" %}</a></li>
+              <li><a href="#">{% trans "20 foizdan ortiq aksiyalarga egalik qiluvchi aksiyadorlar" %}</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>{% trans "Ichki nizom" %}</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">{% trans "Nizom" %}</a></li>
+              <li class="dropdown"><a href="#"><span>{% trans "Ichki hujjatlar" %}</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul class="start-50" style="overflow-y: scroll; height: 450px;">
+                  <li><a href="#">{% trans "Aksiyadorlar umumiy yig'ilishi to'g'risida nizom" %}</a></li>
+                  <li><a href="#">{% trans "Kuzatuv kengashi to'g'risida nizom" %}</a></li>
+                  <li><a href="#">{% trans "Ichki audit xizmati to'g'risida nizom" %}</a></li>
+                  <li><a href="#">{% trans "Sanoq komissiyasi to'g'risida nizom" %}</a></li>
+                  <li><a href="#">{% trans "Taftish komissiyasi to'g'risida nizom" %}</a></li>
+                  <li><a href="#">{% trans "Ijro etuvchi organ to'g'risida nizom" %}</a></li>
+                  <li><a href="#">{% trans "Axborot siyosati to'g'risida nizom" %}</a></li>
+                  <li><a href="#">{% trans "Korporativ boshqaruv kodeksi" %}</a></li>
+                  <li><a href="#">{% trans "Dividend siyosati to'g'risida nizom" %}</a></li>
+                  <li><a href="#">{% trans "Ichki nazorat to'g'risida nizom" %}</a></li>
+                  <li><a href="#">{% trans "Korporativ" %}</a></li>
+                  <li><a href="#">{% trans "Maslaxatchi" %}</a></li>
+                  <li><a href="#">{% trans "To'g'risida nizom" %}</a></li>
+                  <li><a href="#">{% trans "Manfatlar qarama" %}</a></li>
+                  <li><a href="#">{% trans "Qarshiligi vaqtida" %}</a></li>
+                  <li><a href="#">{% trans "Xarakat qilish" %}</a></li>
+                  <li><a href="#">{% trans "Tartibi to'g'risida" %}</a></li>
+                </ul>
+  
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>{% trans "Interaktiv xizmatlar" %}</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">{% trans "Jismoniy va yuridik shaxslar murojaatlari bo'yicha ma'lumotlar" %}</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#">{% trans "Xorijiy investorlar uchun" %}</a></li>
+          <li class="dropdown"><a href="#"><span>{% trans "Matbuot xizmati" %}</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">{% trans "Video lavhalar" %}</a></li>
+              <li><a href="#">{% trans "Yangiliklar" %}</a></li>
+              <li><a href="#">{% trans "Fotogaleriya" %}</a></li>
+              <li><a href="#">{% trans "Jamiyat haqida OAV materiallari" %}</a></li>
+              <li><a href="#">{% trans "Tabriklar" %}</a></li>
+              <li><a href="#">{% trans "E'lonlar" %}</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>{% trans "Aloqalar" %}</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul style="left: -200px;">
+              <li><a href="#">{% trans "Jamiyat boshqaruv rahbarining virtual qabulxonasi" %}</a></li>
+              <li><a href="#">{% trans "Aksiyadorlar bilan aloqa qilish uchun telefon raqamlar" %}</a></li>
+              <li><a href="#">{% trans "Investorlar bilan aloqa qilish uchun telefon raqamlar" %}</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>{% trans "Kerakli" %}</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul style="left: -100px">
+              <li><a href="#">{% trans "Yillik haridlar jadvali" %}</a></li>
+              <li><a href="#">{% trans "Tender va birja" %}</a></li>
+              <li><a href="#">{% trans "Aksiya sotib olish" %}</a></li>
+              <li><a href="#">{% trans "Arxiv" %}</a></li>
+            </ul>
+          </li>
+        </ul>
+  
+        <style>
+          .black {
+            color: black;
+          }
+  
+          .modal-bg {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center
+          }
+          .modal-content {
+            left: -75%;
+            width: 80vw !important;
+            height: 90vh;
+            overflow-y: auto;
+            position: relative;
+          }
+  
+          .modal-body {
+            display: flex;
+            flex-wrap: wrap;
+            
+          }
+          .a-black {
+            color: black !important;
+          }
+          .modal-header {
+              position: sticky;
+              top: 0;
+              z-index: 1050;
+              background-color: white;
+          }
+          .modal-backdrop {
+            display: none;
+          }
+  
+        </style>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-bg">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title black" id="exampleModalLabel">{% trans 'Sayt xaritasi' %}</h5>
+                  <button type="button" class="btn-close red" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body black gap-5">
+                  <div class="div1">
+                    <h3 class="black"><a href="#" class="a-black" style="font-size: 20px;">{% trans "Jamiyat haqida" %}</a></h3>
+                    <ul class="d-flex flex-column align-items-start">
+                      <li><a class="a-black" href="{% url 'jamiyat_tarixi' %}">{% trans "Jamiyat tarixi" %}</a></li>
+                      <li><a class="a-black" href="{% url 'jamiyat_bugun' %}">{% trans "Jamiyat Jamiyat bugungi kunda" %}</a></li>
+                      <li><a class="a-black" href="{% url 'raxbar' %}">{% trans "Raxbariyat" %}</a></li>
+                      <li><a class="a-black" href="{% url 'ish'%}">{% trans "Bo'sh ish o'rinlari" %}</a></li>
+                      <li><a class="a-black" href="#">{% trans "Jamiyatni rivojlantirish strategiyasi" %}</a></li>
+                      <li><a class="a-black" href="#">{% trans "Jamiyatning biznes rejalari" %}</a></li>
+                      <li><a class="a-black" href="#">{% trans "Tashkiliy tuzulma" %}</a></li>
+                      <li><a class="a-black" href="#">{% trans "Mahsulot va xizmatlar" %}</a></li>
+                    </ul>
+                  </div>
+  
+  
+                  <div class="div1">
+                    <h3 class="black">{% trans "Interaktiv xizmatlar" %}</h3>
+                    <ul class="d-flex flex-column align-items-start">
+                      <li><a href="#" class="a-black">{% trans "Jismoniy va yuridik shaxslar murojaatlari bo'yicha ma'lumotlar" %}</a></li>
+                    </ul>
+                  </div>
+                  <div class="div1">
+                    <h3 class="black"><a href="#" style="font-size: 1.75rem;" class="a-black">{% trans "Xorijiy investorlar uchun" %}</a></h3>
+                  </div>
+                  <div class="div1">
+                    <h3 class="black" class="a-black">{% trans "Matbuot xizmati" %}</h3>
+                    <ul class="d-flex flex-column align-items-start">
+                      <li><a href="#" class="a-black">{% trans "Video lavhalar" %}</a></li>
+                      <li><a href="#" class="a-black">{% trans "Yangiliklar" %}</a></li>
+                      <li><a href="#" class="a-black">{% trans "Fotogaleriya" %}</a></li>
+                      <li><a href="#" class="a-black">{% trans "Jamiyat haqida OAV materiallari" %}</a></li>
+                      <li><a href="#" class="a-black">{% trans "Tabriklar" %}</a></li>
+                      <li><a href="#" class="a-black">{% trans "E'lonlar" %}</a></li>
+                    </ul>
+                  </div>
+                  <div class="div1">
+                    <h3 class="black" class="a-black">{% trans "Aloqalar" %}</h3>
+                    <ul class="d-flex flex-column align-items-start">
+                      <li><a href="#" class="a-black">{% trans "Jamiyat boshqaruv rahbarining virtual qabulxonasi" %}</a></li>
+                      <li><a href="#" class="a-black">{% trans "Aksiyadorlar bilan aloqa qilish uchun telefon raqamlar" %}</a></li>
+                      <li><a href="#" class="a-black">{% trans "Investorlar bilan aloqa qilish uchun telefon raqamlar" %}</a></li>          
+                    </ul>
+                  </div>
+                  <div class="div1">
+                    <h3 class="black" class="a-black">{% trans "Kerakli" %}</h3>
+                    <ul class="d-flex flex-column align-items-start">
+                      <li><a href="#" class="a-black">{% trans "Yillik haridlar jadvali" %}</a></li>
+                      <li><a href="#" class="a-black">{% trans "Tender va birja" %}</a></li>
+                      <li><a href="#" class="a-black">{% trans "Aksiya sotib olish" %}</a></li>
+                      <li><a href="#" class="a-black">{% trans "Arxiv" %}</a></li>         
+                    </ul>
+                  </div>
+                  <div class="div1">
+                    <h3 class="black"><a href="#" class="a-black" style="font-size: 20px;">{% trans "Korporativ boshqaruv" %}</a></h3>
+                    <ul class="d-flex flex-column align-items-start">
+                      <li><a class="a-black" href="#">{% trans "Boshqaruv organlari" %}</a></li>
+                      <li><a class="a-black" href="#">{% trans "Kuzatuv kengashi" %}</a></li>
+                      <li><a class="a-black" href="#">{% trans "Ijro etuvchi organ" %}</a></li>
+                      <li><a class="a-black" href="#">{% trans "Ichki audit tizimi" %}a></li>
+                      <li><a class="a-black" href="#">{% trans "Taftish komissiyasi" %}a></li>
+                      <li><a class="a-black" href="#">{% trans "Axborotni oshkor qilish" %}</a></li>
+                      <li><a class="a-black" href="#">{% trans "Yillik va chorak hisobotlar" %}</a></li>
+                      <li><a class="a-black" href="#">{% trans "Muhim faktlar" %}</a></li>
+                      <li><a href="" class="a-black">{% trans "Affillangan shaxslar ro'yxati" %}</a></li>
+                      <li><a href="" class="a-black">{% trans "Xalqaro audit" %}</a></li>
+                      <li><a href="" class="a-black">{% trans "Auditor hulosasi" %}</a></li>
+                      <li><a href="" class="a-black">{% trans "Emissiya risolalari" %}</a></li>
+                      <li><a href="" class="a-black">{% trans "Dividentlar to'lanishi" %}</a></li>
+                      <li><a href="" class="a-black">{% trans "Biznes rejaning har bir bandining bajarilishi bo'yicha ma'lumot" %}</a></li>
+                      <li><a href="#" class="a-black">{% trans "Ijro organi a'zolarini mukofatlash" %}</a></li>
+                      <li><a href="#" class="a-black">{% trans "Ijro kengashi a'zolarini mukofatlash" %}</a></li>
+                      <li><a href="#" class="a-black">{% trans "Aksiyadorlar umumiy yig'ilishi to'g'risida ma'lumot" %}</a></li>
+                      <li><a href="#" class="a-black">{% trans "20 foizdan ortiq aksiyalarga egalik qiluvchi aksiyadorlar" %}</a></li>
+                    </ul>
+                  </div>
+                  <div class="div1">
+                    <h3 class="black"><a href="#" class="a-black" style="font-size: 20px;">{% trans "Ichki nizom" %}</a></h3>
+                    <ul class="d-flex flex-column align-items-start">
+                        <li><a href="#" class="a-black">{% trans "Aksiyadorlar umumiy yig'ilishi to'g'risida nizom" %}</a></li>
+                        <li><a href="#" class="a-black">{% trans "Kuzatuv kengashi to'g'risida nizom" %}</a></li>
+                        <li><a href="#" class="a-black">{% trans "Ichki audit xizmati to'g'risida nizom" %}</a></li>
+                        <li><a href="#" class="a-black">{% trans "Sanoq komissiyasi to'g'risida nizom" %}</a></li>
+                        <li><a href="#" class="a-black">{% trans "Taftish komissiyasi to'g'risida nizom" %}</a></li>
+                        <li><a href="#" class="a-black">{% trans "Ijro etuvchi organ to'g'risida nizom" %}</a></li>
+                        <li><a href="#" class="a-black">{% trans "Axborot siyosati to'g'risida nizom" %}</a></li>
+                        <li><a href="#" class="a-black">{% trans "Korporativ boshqaruv kodeksi" %}</a></li>
+                        <li><a href="#" class="a-black">{% trans "Dividend siyosati to'g'risida nizom" %}</a></li>
+                        <li><a href="#" class="a-black">{% trans "Ichki nazorat to'g'risida nizom" %}</a></li>
+                        <li><a href="#" class="a-black">{% trans "Korporativ" %}</a></li>
+                        <li><a href="#" class="a-black">{% trans "Maslaxatchi" %}</a></li>
+                        <li><a href="#" class="a-black">{% trans "To'g'risida nizom" %}</a></li>
+                        <li><a href="#" class="a-black">{% trans "Manfatlar qarama" %}</a></li>
+                        <li><a href="#" class="a-black">{% trans "Qarshiligi vaqtida" %}</a></li>
+                        <li><a href="#" class="a-black">{% trans "Xarakat qilish" %}</a></li>
+                        <li><a href="#" class="a-black">{% trans "Tartibi to'g'risida" %}</a></li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+  
+    </div>
+  </header>
+  {% block content %}
+  {% endblock content %}
+  {% load i18n %}
+{% load static %}
+<footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">TALTES</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Qashqadaryo</p>
+            <p>Nimadur tuman nimadur kocha</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+955 88 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>KOMPANIYA HAQIDA</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>FAOLIYAT</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>ALOQA MA’LUMOTLARI</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">TALTES</strong> <span>All Rights Reserved</span></p>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+    class="bi bi-arrow-up-short"></i></a>
+
+<!-- Preloader -->
+<div id="preloader"></div>
+
+<style>
+    .slider {
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .slider-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slider-item {
+      flex: 0 0 25%;
+      /* Har bir elementning kengligi */
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    .controls {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+
+    .slider {
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+    }
+
+    .slider-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slider-item {
+      flex: 0 0 25%;
+      /* Har bir elementning kengligi */
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+
+    .controls {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+  <script>
+    const sliderTrack = document.querySelector('.slider-track');
+    const slides = document.querySelectorAll('.slider-item');
+    const prevBtn = document.getElementById('prev');
+    const nextBtn = document.getElementById('next');
+
+    let currentIndex = 0;
+    const itemsPerView = 4; // Bir vaqtning o'zida ko'rsatiladigan elementlar soni
+    const totalSlides = slides.length;
+
+    // Slayderni cheksiz aylanish uchun tayyorlash
+    function cloneSlides() {
+      for (let i = 0; i < itemsPerView; i++) {
+        const firstClone = slides[i].cloneNode(true);
+        const lastClone = slides[totalSlides - 1 - i].cloneNode(true);
+        sliderTrack.appendChild(firstClone);
+        sliderTrack.insertBefore(lastClone, sliderTrack.firstChild);
+      }
+    }
+
+    cloneSlides();
+
+    const slideWidth = 100 / itemsPerView;
+    sliderTrack.style.transform = `translateX(-${slideWidth * itemsPerView}%)`; // Boshlang'ich pozitsiya
+
+    function updateSlider() {
+      sliderTrack.style.transition = 'transform 0.5s ease-in-out';
+      sliderTrack.style.transform = `translateX(-${slideWidth * (currentIndex + itemsPerView)}%)`;
+    }
+
+    function showNextSlide() {
+      currentIndex++;
+      updateSlider();
+
+      if (currentIndex >= totalSlides) {
+        setTimeout(() => {
+          sliderTrack.style.transition = 'none';
+          currentIndex = 0;
+          sliderTrack.style.transform = `translateX(-${slideWidth * itemsPerView}%)`;
+        }, 500);
+      }
+    }
+
+    function showPrevSlide() {
+      currentIndex--;
+      updateSlider();
+
+      if (currentIndex < 0) {
+        setTimeout(() => {
+          sliderTrack.style.transition = 'none';
+          currentIndex = totalSlides - 1;
+          sliderTrack.style.transform = `translateX(-${slideWidth * (currentIndex + itemsPerView)}%)`;
+        }, 500);
+      }
+    }
+
+    // Auto-slide every 2 seconds
+    let autoSlide = setInterval(showNextSlide, 3000);
+
+    // Button click events
+    nextBtn.addEventListener('click', () => {
+      clearInterval(autoSlide); // Auto-slide to'xtaydi
+      showNextSlide();
+      autoSlide = setInterval(showNextSlide, 2000); // Keyin qayta boshlanadi
+    });
+
+    prevBtn.addEventListener('click', () => {
+      clearInterval(autoSlide);
+      showPrevSlide();
+      autoSlide = setInterval(showNextSlide, 2000);
+    });
+    </script>
+<!-- Vendor JS Files -->
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+<script src="{% static 'vendor/aos/aos.js' %}"></script>
+<script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+<script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+<script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+<!-- Main JS File -->
+<script src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'js/map.js' %}"></script>

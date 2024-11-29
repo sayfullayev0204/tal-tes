@@ -332,3 +332,55 @@ msgstr "Tashkent"
 
 msgid "Farg‘ona viloyati"
 msgstr "Fergana region"
+
+
+msgid "RAHBARIYAT"
+msgstr "Management"
+
+msgid "Ism va familiya"
+msgstr "Full Name"
+
+msgid "Lavozimi:"
+msgstr "Position"
+
+msgid "Qabul kunlari:"
+msgstr "Reception Days:"
+
+msgid "Pirmanov Jasurbek Nazarqulovich"
+msgstr "Pirmanov Jasurbek Nazarqulovich"
+
+msgid "Bosh direktor"
+msgstr "General Director"
+
+msgid "Har xafta payshanba kuni. Soat 10:00 dan 12:00 gacha"
+msgstr "Every Thursday from 10:00 to 12:00"
+
+msgid "Ahmedov Shovkat Zaripovich"
+msgstr "Ahmedov Shovkat Zaripovich"
+
+msgid "Ishlab chiqarish boʻyicha direktor"
+msgstr "Production Director"
+
+msgid "Har xafta seshanba kuni. Soat 15:00 dan 17:00 gacha"
+msgstr "Every Tuesday from 15:00 to 17:00"
+
+msgid "Radjabov Najmiddin Asqarovich"
+msgstr "Radjabov Najmiddin Asqarovich"
+
+msgid "Umumiy masalalar boʻyicha direktor"
+msgstr "General Affairs Director"
+
+msgid "Har xafta juma kuni. Soat 14:00 dan 16:00 gacha"
+msgstr "Every Friday from 14:00 to 16:00"
+
+msgid "Xaitov Ixtiyor Batirovich"
+msgstr "Xaitov Ixtiyor Batirovich"
+
+msgid "Tartibot va xavfsizlik boʻyicha direktor"
+msgstr "Safety and Security Director"
+
+msgid "Har xafta dushanba kuni. Soat 14:00 dan 16:00 gacha"
+msgstr "Every Monday from 14:00 to 16:00"
+
+msgid "BO'SH ISH O'RINLARI Agar Siz Kompaniyamizda ishlash istagida bo'lsangiz, o'z rezyumeyingizni bizga yuborishingiz yoki nomzod anketasini saytimizdan o'zingizga yuklab olib, to'ldirib, so'ng faks yoki e-mail orqali bizga yuborishingiz mumkin. Faks: +998755125710 E-mail: taltes@tpp.uz Sizga mos bo'sh ish o'rni paydo bo'lishi bilan Kompaniyamizning Kadrlarni boshqarish bo'limi xodimlari Siz bilan aloqaga chiqadilar. Anketani ko'chirib olish"
+msgstr "VACANT PLACES If you want to work in our company, you can send your resume or download the application form and fill it in, send it by fax or e-mail. Fax: +998755125710 E-mail: taltes@tpp.uz When a corresponding vacancy arises, the employees of our personnel management department will contact you Download application form"
