@@ -18,3 +18,6 @@ def ish(request):
 
 def strategiya(request):
     return render(request, 'jamiyat/strategiya.html')
+
+def horij(request):
+    return render(request, 'horij/horij.html')

@@ -1,0 +1,33 @@
+{% extends "base.html"%}
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% trans "Jamiyat tarixi" %}</title>
+</head>
+<body>
+    {% block content %}
+    <section id="stats" class="stats section light-background py-5" style="background-color: white; margin-top: 300px; align-items: center; justify-content: center;">
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="row justify-content-center gy-4">
+                <h1>{% trans "Jismoniy va yuridik shaxslar murojaatlari bo'yicha ma'lumotlar" %}</h1>
+                <div class="accordion accordion-flush w-75" id="accordionFlushExample">
+                    <a href="{% static 'files/atrof.docx' %}" class="text-decoration-none">
+                        <div class="alert alert-primary d-flex align-items-center justify-content-start" role="alert">
+                            <img src="{% static 'img/doc.png' %}" alt="" class="me-3" style="width: 40px; height: 40px;">
+                            <span class="fw-bold">{% trans "Faylni yuklab olish" %}</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
+
+{% endblock %}

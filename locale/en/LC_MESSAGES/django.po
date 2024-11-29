@@ -384,3 +384,6 @@ msgstr "Every Monday from 14:00 to 16:00"
 
 msgid "BO'SH ISH O'RINLARI Agar Siz Kompaniyamizda ishlash istagida bo'lsangiz, o'z rezyumeyingizni bizga yuborishingiz yoki nomzod anketasini saytimizdan o'zingizga yuklab olib, to'ldirib, so'ng faks yoki e-mail orqali bizga yuborishingiz mumkin. Faks: +998755125710 E-mail: taltes@tpp.uz Sizga mos bo'sh ish o'rni paydo bo'lishi bilan Kompaniyamizning Kadrlarni boshqarish bo'limi xodimlari Siz bilan aloqaga chiqadilar. Anketani ko'chirib olish"
 msgstr "VACANT PLACES If you want to work in our company, you can send your resume or download the application form and fill it in, send it by fax or e-mail. Fax: +998755125710 E-mail: taltes@tpp.uz When a corresponding vacancy arises, the employees of our personnel management department will contact you Download application form"
+
+msgid "Faylni yuklab olish"
+msgstr "Download the file"

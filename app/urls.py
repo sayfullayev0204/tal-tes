@@ -8,4 +8,5 @@ urlpatterns = [
     path('raxbar/', views.raxbar, name="raxbar"),
     path('ish/', views.ish, name="ish"),
     path('strategiya/', views.strategiya, name="strategiya"),
+    path('horij/', views.horij, name="horij"),
 ]

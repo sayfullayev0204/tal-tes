@@ -401,3 +401,6 @@ msgstr "Каждый понедельник с 14:00 до 16:00"
 
 msgid "BO'SH ISH O'RINLARI Agar Siz Kompaniyamizda ishlash istagida bo'lsangiz, o'z rezyumeyingizni bizga yuborishingiz yoki nomzod anketasini saytimizdan o'zingizga yuklab olib, to'ldirib, so'ng faks yoki e-mail orqali bizga yuborishingiz mumkin. Faks: +998755125710 E-mail: taltes@tpp.uz Sizga mos bo'sh ish o'rni paydo bo'lishi bilan Kompaniyamizning Kadrlarni boshqarish bo'limi xodimlari Siz bilan aloqaga chiqadilar. Anketani ko'chirib olish"
 msgstr "ВАКАНТНЫЕ МЕСТА Если Вы хотите работать в нашей компании, можете прислать свое резюме либо скачать анкету кандидата и заполнив ее, прислать по факсу или е-mail. Факс: +998755125710 E-mail taltes@tpp.uz При появлении соответствующей вакансии сотрудники отдела управления персонала нашей компании свяжутся с Вами Скачать анкету"
+
+msgid "Faylni yuklab olish"
+msgstr "Скачать файл"
